@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таны Ресторан - Puerto Rican Specialties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fffbf5 0%, #f5e6d3 100%);
+            background-attachment: fixed;
+            background-image: url('rica.webp');
+            background-size: 150%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* HEADER STYLES */
+        header {
+            background: linear-gradient(to right, #8b5a3c, #92663e, #8b5a3c);
+            border-bottom: 4px solid #6b4423;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .logo-main img {
+            width: 110px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .header-top-links {
+            display: flex;
+            gap: 35px;
+            font-size: 15px;
+        }
+
+        .header-top-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-top-links a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255,215,0,0.5);
+        }
+
+        .header-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo-secondary img {
+            width: 90px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 45px;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .nav-menu a:hover {
+            color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        .reserve-btn {
+            background: linear-gradient(45deg, #d4a574, #f4c896);
+            color: #4a2c1a;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .reserve-btn:hover {
+            background: linear-gradient(45deg, #f4c896, #d4a574);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.6);
+        }
+
+        /* MAIN CONTENT STYLES */
+        main {
+            max-width: 1300px;
+            margin: 50px auto;
+            padding: 0 30px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 64px;
+            margin-bottom: 50px;
+            padding: 25px 0;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+            font-weight: 900;
+            letter-spacing: 3px;
+            border-bottom: 3px solid #92663e;
+            background: linear-gradient(to right, transparent, rgba(146, 102, 62, 0.1), transparent);
+        }
+
+        .dishes-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .dish-card {
+            display: flex;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s;
+            border: 3px solid #e6d5c3;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(146, 102, 62, 0.3);
+        }
+
+        .dish-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .dish-image {
+            flex: 0 0 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dish-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .dish-card:hover .dish-image img {
+            transform: scale(1.15);
+        }
+
+        .dish-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3));
+        }
+
+        .dish-details {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #ffffff 0%, #faf7f2 100%);
+        }
+
+        .dish-name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #6b4423;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .dish-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .dish-price {
+            font-size: 28px;
+            color: #92663e;
+            font-weight: bold;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #fff8f0, #ffe4c4);
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(146, 102, 62, 0.2);
+            border: 2px solid #d4a574;
+        }
+
+        /* FOOTER STYLES */
+        footer {
+            background: linear-gradient(to right, #6b4423, #92663e, #6b4423);
+            color: white;
+            margin-top: 80px;
+            padding: 50px 30px 25px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #ffd700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            line-height: 2;
+            font-size: 15px;
+        }
+
+        .footer-section a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid rgba(255, 215, 0, 0.3);
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 968px) {
+            .header-bottom {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 25px;
+            }
+
+            .dish-card,
+            .dish-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .dish-image {
+                flex: 0 0 300px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-main">
+                    <img src="logo.jpg" alt="Restaurant Logo">
+                </div>
+                <div class="header-top-links">
+                    <a href="#about">About Us</a>
+                    <a href="#schedule">Schedule</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo-secondary">
+                    <img src="logo2.jpg" alt="Secondary Logo">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#menu">Menu</a>
+                    <a href="#drinks">Drink Menu</a>
+                    <a href="#events">Events</a>
+                    <a href="#giftcard">Gift Card</a>
+                </nav>
+                <a href="#reserve" class="reserve-btn">Reserve</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2 class="section-title"> Puerto Rican Specialties</h2>
+
+        <div class="dishes-grid">
+            <!-- Dish 1 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Boneless Fried.jpeg" alt="Boneless Fried Chicken">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">Boneless Fried Chicken w/ Rice & Beans</div>
+                    <div class="dish-description">Шараасан тахианы мах, амтлаг будаа, шош хольсон уламжлалт хоол.</div>
+                    <div class="dish-price">$21.00</div>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Boneless Stew.jpeg" alt="Boneless Stew Pork">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">Boneless Stew Pork w/ Rice & Beans</div>
+                    <div class="dish-description">Зөөлөн гахайн махтай, өтгөн соустай амтат хоол. Халуун будаа, шоштой хамт.</div>
+                    <div class="dish-price">$21.00</div>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Corned Beef 212.jpeg" alt="Corned Beef">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">Corned Beef</div>
+                    <div class="dish-description">Давстай үхрийн мах, сонгино, улаан лоолийн хольцтой Puerto Rican хэв маяг.</div>
+                    <div class="dish-price">$19.50</div>
+                </div>
+            </div>
+
+            <!-- Dish 4 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Pernil.jpeg" alt="Pernil">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">Pernil w/ Rice & Beans</div>
+                    <div class="dish-description">Удаан шарсан гахайн мах, Puerto Rican амтлагчтай.</div>
+                    <div class="dish-price">$21.25</div>
+                </div>
+            </div>
+
+            <!-- Dish 5 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Rice & Beans.jpeg" alt="Rice & Beans">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">Rice & Beans</div>
+                    <div class="dish-description">Уламжлалт Puerto Rican будаа, шош хоёрын амттай хольц.</div>
+                    <div class="dish-price">$7.25</div>
+                </div>
+            </div>
+
+            <!-- Dish 6 -->
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="c:\Users\Huawei\Downloads\Rack of Ribs.jpeg" alt="Rack of Ribs">
+                </div>
+                <div class="dish-details">
+                    <div class="dish-name">1/3 Rack of Ribs w/ Rice & Beans</div>
+                    <div class="dish-description">Амтлаг соустай шарсан хавирга, будаа, шош хольсон хоол.</div>
+                    <div class="dish-price">$24.50</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Таны Ресторан</h3>
+                <p>123 Main Street<br>
+                Ulaanbaatar, Mongolia<br>
+                Phone: +976 1234 5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Таны Ресторан. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
