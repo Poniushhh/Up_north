@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таны Ресторан - Appetizers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            background-image: url('appe.jpg');
+            background-size: 150%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* HEADER STYLES */
+        header {
+            background-color: white;
+            border-bottom: 2px solid #92663e;
+            padding: 10px 20px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo-main img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header-top-links {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+        }
+
+        .header-top-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-top-links a:hover {
+            color: #92663e;
+        }
+
+        .header-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo-secondary img {
+            width: 80px;
+            height: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #92663e;
+        }
+
+        .reserve-btn {
+            background-color: #92663e;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .reserve-btn:hover {
+            background-color: #7a5534;
+        }
+
+        /* MAIN CONTENT STYLES */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-table-container {
+            background-color: #fff8f0;
+            padding: 30px;
+            border: 2px solid #92663e;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .menu-table-header {
+            display: flex;
+            background-color: #92663e;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .menu-table-header .item-name {
+            flex: 1;
+        }
+
+        .menu-table-header .item-price {
+            width: 150px;
+            text-align: right;
+        }
+
+        .menu-table-row {
+            display: flex;
+            padding: 15px 20px;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .menu-table-row:nth-child(odd) {
+            background-color: #ffe4c4;
+        }
+
+        .menu-table-row:nth-child(even) {
+            background-color: #fff0e0;
+        }
+
+        .menu-table-row:hover {
+            transform: translateX(5px);
+        }
+
+        .menu-table-row .item-name {
+            flex: 1;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .menu-table-row .item-price {
+            width: 150px;
+            text-align: right;
+            font-weight: 600;
+            color: #92663e;
+            font-size: 16px;
+        }
+
+        /* IMAGES GALLERY */
+        .images-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 280px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #92663e;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(146, 102, 62, 0.4);
+        }
+
+        /* FOOTER STYLES */
+        footer {
+            background-color: #92663e;
+            color: white;
+            margin-top: 60px;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .header-bottom {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .menu-table-header,
+            .menu-table-row {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            .menu-table-header .item-price,
+            .menu-table-row .item-price {
+                width: 100%;
+                text-align: left;
+                margin-top: 5px;
+            }
+
+            .images-gallery {
+                flex-direction: column;
+            }
+
+            .gallery-item {
+                max-width: 100%;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-main">
+                    <img src="logo.jpg" alt="Restaurant Logo">
+                </div>
+                <div class="header-top-links">
+                    <a href="#about">About Us</a>
+                    <a href="#schedule">Schedule</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo-secondary">
+                    <img src="logo2.jpg" alt="Secondary Logo">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#menu">Menu</a>
+                    <a href="#drinks">Drink Menu</a>
+                    <a href="#events">Events</a>
+                    <a href="#giftcard">Gift Card</a>
+                </nav>
+                <a href="#reserve" class="reserve-btn">Reserve</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2 class="section-title">Appetizers</h2>
+
+        <div class="menu-table-container">
+            <div class="menu-table-header">
+                <div class="item-name">Appetizers</div>
+                <div class="item-price">Price</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Battered Green Beans</div>
+                <div class="item-price">$8.50</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Empanada - Beef</div>
+                <div class="item-price">$5.25</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Empanada - Cheese</div>
+                <div class="item-price">$4.50</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Empanada - Chicken</div>
+                <div class="item-price">$5.25</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Empanada - Corned Beef</div>
+                <div class="item-price">$5.25</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Fried Clam Strips</div>
+                <div class="item-price">$15.50</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Fried Calamari</div>
+                <div class="item-price">$7.50</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Hand Cut French Fries</div>
+                <div class="item-price">$7.50</div>
+            </div>
+            
+            <div class="menu-table-row">
+                <div class="item-name">Hot Pretzel</div>
+                <div class="item-price">$5.00</div>
+            </div>
+        </div>
+
+        <!-- Dish Images Gallery -->
+        <div class="images-gallery">
+            <div class="gallery-item">
+                <img src="c:\Users\Huawei\Downloads\fried_green_beans.jpg" alt="Fried Green Beans">
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\Huawei\Downloads\clam_strips.jpg" alt="Clam Strips">
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\Huawei\Downloads\corned beef.jpeg" alt="Corned Beef Empanada">
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\Huawei\Downloads\hand_cut.jpeg" alt="Hand Cut Fries">
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Таны Ресторан</h3>
+                <p>123 Main Street<br>
+                Ulaanbaatar, Mongolia<br>
+                Phone: +976 1234 5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Таны Ресторан. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
