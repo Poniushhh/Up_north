@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таны Ресторан</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            background-image: url('sandwich.jpg');
+            background-size: 150%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* HEADER STYLES */
+        header {
+            background-color: white;
+            border-bottom: 2px solid #92663e;
+            padding: 10px 20px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo-main img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header-top-links {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+        }
+
+        .header-top-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-top-links a:hover {
+            color: #92663e;
+        }
+
+        .header-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo-secondary img {
+            width: 80px;
+            height: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #92663e;
+        }
+
+        .reserve-btn {
+            background-color: #92663e;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .reserve-btn:hover {
+            background-color: #7a5534;
+        }
+
+        /* MAIN CONTENT STYLES */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #92663e;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-container {
+            background-color: #fff8f0;
+            padding: 30px;
+            border: 2px solid #92663e;
+            border-radius: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:nth-child(odd) {
+            background-color: #ffe4c4;
+        }
+
+        .menu-item:nth-child(even) {
+            background-color: #fff0e0;
+        }
+
+        .menu-item:hover {
+            transform: translateX(5px);
+        }
+
+        .menu-item-image {
+            flex-shrink: 0;
+        }
+
+        .menu-item-image img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-item-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-item-price {
+            font-size: 16px;
+            color: #92663e;
+            font-weight: 600;
+        }
+
+        /* FOOTER STYLES */
+        footer {
+            background-color: #92663e;
+            color: white;
+            margin-top: 60px;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .header-bottom {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-item-image img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-main">
+                    <img src="logo.jpg" alt="Restaurant Logo">
+                </div>
+                <div class="header-top-links">
+                    <a href="#about">About Us</a>
+                    <a href="#schedule">Schedule</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo-secondary">
+                    <img src="logo2.jpg" alt="Secondary Logo">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#menu">Menu</a>
+                    <a href="#drinks">Drink Menu</a>
+                    <a href="#events">Events</a>
+                    <a href="#giftcard">Gift Card</a>
+                </nav>
+                <a href="#reserve" class="reserve-btn">Reserve</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2 class="section-title">Sandwiches</h2>
+
+        <div class="menu-container">
+            <!-- Sandwich 1 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="c:\Users\Huawei\Downloads\beef burger.jpeg" alt="Beef Burger">
+                </div>
+                <div class="menu-item-details">
+                    <div class="menu-item-name">Beef Burger w/Fries</div>
+                    <div class="menu-item-price">Price: $16.50</div>
+                </div>
+            </div>
+
+            <!-- Sandwich 2 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="c:\Users\Huawei\Downloads\buffalo chicken.jpeg" alt="Buffalo Chicken Wrap">
+                </div>
+                <div class="menu-item-details">
+                    <div class="menu-item-name">Buffalo Chicken Wrap w/Fries</div>
+                    <div class="menu-item-price">Price: $17.00</div>
+                </div>
+            </div>
+
+            <!-- Sandwich 3 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="c:\Users\Huawei\Downloads\chicken parmesan.jpeg" alt="Chicken Parmesan Sub">
+                </div>
+                <div class="menu-item-details">
+                    <div class="menu-item-name">Chicken Parmesan Sub</div>
+                    <div class="menu-item-price">Price: $16.50</div>
+                </div>
+            </div>
+
+            <!-- Sandwich 4 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="c:\Users\Huawei\Downloads\grilled2.jpeg" alt="Chicken Sandwich">
+                </div>
+                <div class="menu-item-details">
+                    <div class="menu-item-name">Chicken Sandwich w/Fries (Crispy or Grilled)</div>
+                    <div class="menu-item-price">Price: $16.50</div>
+                </div>
+            </div>
+
+            <!-- Sandwich 5 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="c:\Users\Huawei\Downloads\ceaser wrap.jpeg" alt="Chicken Caesar Wrap">
+                </div>
+                <div class="menu-item-details">
+                    <div class="menu-item-name">Chicken Caesar Wrap w/Fries</div>
+                    <div class="menu-item-price">Price: $16.50</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Таны Ресторан</h3>
+                <p>123 Main Street<br>
+                Ulaanbaatar, Mongolia<br>
+                Phone: +976 1234 5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Таны Ресторан. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
