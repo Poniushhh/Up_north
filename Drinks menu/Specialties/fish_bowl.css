@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     margin: 20px 0;
 }
 
@@ -44,37 +44,6 @@ body {
     display: block;
 }
 
-/* ============================================
-   BREADCRUMB
-   ============================================ */
-
-.breadcrumb {
-    height: 35px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    margin: 20px 0;
-}
-
-.breadcrumb a {
-    color: #333333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: #92663e;
-}
-
-.breadcrumb .separator {
-    color: #999999;
-    margin: 0 8px;
-}
-
-.breadcrumb .current {
-    color: #92663e;
-    font-weight: bold;
-}
 
 /* ============================================
    DRINK TITLE
