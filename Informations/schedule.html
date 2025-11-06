@@ -5,515 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schedule - Up North Wood Fire & Grill Bar</title>
   </head>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="schedule.css" />
   <body>
     <!-- The following table is the HEADER -->
     <header>
-      <table width="100%">
-        <tr height="20">
-          <th rowspan="2" width="8%">
-            <a href="../Informations/index.html">
-                <img src="../src/logo.jpg" alt="Restaurant logo" width="100" />
-            </a>
-          </th>
-          <th colspan="6"></th>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/about_us.html"><font color="black" >Бидний тухай</font></a></td>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/schedule.html"><font color="black" >Хуваарь</font></a></td>
-        </tr>
-        <tr height="80">
-          <td width="5%" valign="middle">
-            <a href="../Twister/index.html">
-                <img src="../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
-            </a>
-          </td>
-          <td width="30%"></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/menu.html"><font color="black" ><h3>Хоолны цэс</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Drinks menu/drinks.html"><font color="black" ><h3>Уух зүйлс</h3></font></a>
-          </td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/events.html"><font color="black" ><h3>Эвентүүд</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/gift_card.html"><font color="black" ><h3>Бэлгийн карт</h3></font></a></td>
-          <td colspan="2" align="center" valign="middle">
-            <a href="../Informations/book.html">
-              <svg width="180" height="50">
-                <rect width="180" height="50" fill="#92663e" rx="25" />
-                <text
-                  x="90"
-                  y="32"
-                  fill="white"
-                  font-size="18"
-                  font-weight="bold"
-                  text-anchor="middle"
-                >
-                  Захиалга хийх
-                </text>
-              </svg>
-            </a>
-          </td>
-        </tr>
-      </table>
+      <div class="header-container">
+        <!-- Row 1, Column 1: Logo (rowspan 2) -->
+        <div class="logo-cell">
+          <a href="../Informations/index.html">
+            <img src="../src/logo.jpg" alt="Restaurant logo" width="100" />
+          </a>
+        </div>
+
+        <!-- Row 1, Columns 2-7: Empty (colspan 6) -->
+        <div class="empty-colspan"></div>
+
+        <!-- Row 1, Column 8: Бидний тухай -->
+        <div class="top-link-1">
+          <a href="../Informations/about_us.html">Бидний тухай</a>
+        </div>
+
+        <!-- Row 1, Column 9: Хуваарь -->
+        <div class="top-link-2">
+          <a href="../Informations/schedule.html">Хуваарь</a>
+        </div>
+
+        <!-- Row 2, Column 2: Twister Logo -->
+        <div class="twister-cell">
+          <a href="../Twister/index.html">
+            <img
+              src="../src/twisters_logo.jpeg"
+              alt="Twisters logo"
+              width="80"
+            />
+          </a>
+        </div>
+
+        <!-- Row 2, Column 3: Empty 30% -->
+        <div class="empty-spacer"></div>
+
+        <!-- Row 2, Column 4: Хоолны цэс -->
+        <div class="menu-link-1">
+          <a href="../Informations/menu.html"><h3>Хоолны цэс</h3></a>
+        </div>
+
+        <!-- Row 2, Column 5: Уух зүйлс -->
+        <div class="menu-link-2">
+          <a href="../Drinks menu/drinks.html"><h3>Уух зүйлс</h3></a>
+        </div>
+
+        <!-- Row 2, Column 6: Эвентүүд -->
+        <div class="menu-link-3">
+          <a href="../Informations/events.html"><h3>Эвентүүд</h3></a>
+        </div>
+
+        <!-- Row 2, Column 7: Бэлгийн карт -->
+        <div class="menu-link-4">
+          <a href="../Informations/gift_card.html"><h3>Бэлгийн карт</h3></a>
+        </div>
+
+        <!-- Row 2, Columns 8-9: Button (colspan 2) -->
+        <div class="button-cell">
+          <a href="../Informations/book.html" class="book-button">
+            Ширээ захиалах
+          </a>
+        </div>
+      </div>
     </header>
 
-    <hr>
+    <hr />
 
     <!-- Breadcrumb Navigation -->
-    <table width="100%" align="center" height="35">
-      <tr>
-        <td align="left" valign="middle">
-          &nbsp;&nbsp;&nbsp;
-          <a href="index.html"><font color="#333333">Нүүр</font></a>
-          <font color="#999999"> &gt; </font>
-          <font color="#92663e"><b>Хуваарь</b></font>
-        </td>
-      </tr>
-    </table>
+    <div class="breadcrumb-navigation">
+        <a href="index.html">Нүүр</a>
+        <font color="#999999"> &gt; </font>
+        <font color="#92663e"><a class="current" href="./schedule.html"><b>Цагийн хуваарь</b></a>
+      </div>
 
-    <br />
+    <!-- Main Content -->
+    <main class="schedule-page">
+      <!-- Title Section -->
+      <section class="page-title">
+        <div class="title">
+          <h1>Улирлын цагийн хуваарь</h1>
+          <span class="subtitle">ЖИЛИЙН ТУРШ</span>
+        </div>
+      </section>
 
-    <!-- Title Section -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="60%">
-          <font color="#92663e"><h1>Цаг ба Улирал</h1></font>
-        </td>
-        <td width="40%" align="right" valign="bottom" style="padding-bottom: 10px;">
-          <font size="3" color="#999999">ЖИЛИЙН ТУРШ</font>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="2"><td bgcolor="#92663e"></td></tr>
-            <tr height="2"><td></td></tr>
-            <tr height="1"><td bgcolor="#cccccc"></td></tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+      <!-- Current Season Indicator -->
+      <section class="current-season">
+        <div class="season-badge">
+          <p class="season-label">Одоогийн ажиллах цаг:</p>
+          <h2 class="season-name">ӨВЛИЙН ХУВААРЬ</h2>
+          <p class="season-months">Арванхоёрдугаар - Гуравдугаар сар</p>
+        </div>
+      </section>
 
-    <br /><br />
+      <!-- Seasonal Timeline Visual -->
+      <section class="seasonal-timeline">
+        <div class="timeline-container">
+          <div class="timeline-item active" data-season="winter">
+            <span class="timeline-label">12-р - 3-р сар</span>
+            <div class="timeline-bar"></div>
+            <span class="timeline-icon">❄</span>
+          </div>
+          <div class="timeline-item" data-season="summer">
+            <span class="timeline-label">4-р - 10-р сар</span>
+            <div class="timeline-bar"></div>
+            <span class="timeline-icon">☀</span>
+          </div>
+          <div class="timeline-item" data-season="offseason">
+            <span class="timeline-label">11-р сар</span>
+            <div class="timeline-bar"></div>
+            <span class="timeline-icon">🍂</span>
+          </div>
+        </div>
+      </section>
 
-    <!-- Current Season Indicator -->
-    <table width="50%" align="center" cellspacing="0" cellpadding="20" bgcolor="#fafafa">
-      <tr>
-        <td align="center">
-          <font size="3" color="#666666">Одоогийн ажиллах цаг:</font><br/>
-          <font size="5" color="#92663e"><b>ӨВЛИЙН ЦАГ</b></font><br/>
-          <font size="2" color="#999999">Арванхоёрдугаар - Гуравдугаар сар</font>
-        </td>
-      </tr>
-    </table>
+      <!-- WINTER SEASON SCHEDULE -->
+      <section class="schedule-card winter-schedule">
+        <div class="schedule-header">
+          <div class="season-icon-large">❄</div>
+          <h3>ӨВӨЛ</h3>
+          <p>12-р - 3-р сар</p>
+        </div>
+        <div class="schedule-content">
+          <div class="schedule-grid">
+            <div class="schedule-row">
+              <span class="day">ДА - ПҮ</span>
+              <span class="time">4:00 PM - 9:00 PM</span>
+            </div>
+            <div class="schedule-row">
+              <span class="day">БААСАН</span>
+              <span class="time">4:00 PM - 11:00 PM</span>
+            </div>
+            <div class="schedule-row">
+              <span class="day">БЯ - НЯМ</span>
+              <span class="time">8:00 AM - 11:00 PM</span>
+            </div>
+          </div>
+          <p class="schedule-note">
+            Баярын өдрүүдэд нэмэлт цаг • Галын суудал боломжтой
+          </p>
+        </div>
+      </section>
 
-    <br /><br /><br />
+      <!-- SUMMER SEASON SCHEDULE -->
+      <section class="schedule-card summer-schedule">
+        <div class="schedule-header-horizontal">
+          <h3>☀ ЗУНЫ УЛИРАЛ</h3>
+          <span>Дөрөвдүгээр - Аравдугаар сар</span>
+        </div>
+        <div class="schedule-columns">
+          <div class="schedule-column">
+            <div class="day-label">ДА - ПҮ</div>
+            <div class="time-display">
+              <span class="time-large">8 AM</span>
+              <span class="time-separator">-с</span>
+              <span class="time-large">9 PM</span>
+            </div>
+          </div>
+          <div class="schedule-column highlight">
+            <div class="day-label">БА - БЯ</div>
+            <div class="time-display">
+              <span class="time-large">8 AM</span>
+              <span class="time-separator">-с</span>
+              <span class="time-large">11 PM</span>
+            </div>
+          </div>
+          <div class="schedule-column">
+            <div class="day-label">НЯМ</div>
+            <div class="time-display">
+              <span class="time-large">8 AM</span>
+              <span class="time-separator">-с</span>
+              <span class="time-large">9 PM</span>
+            </div>
+          </div>
+        </div>
+        <p class="schedule-note">
+          Twisters Зайрмаг өдөр бүр 12PM-9PM нээлттэй • Бүрэн патио хоолны
+          үйлчилгээ
+        </p>
+      </section>
 
-    <!-- Seasonal Timeline Visual -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="33%" align="center">
-          <font size="2" color="#cccccc"><b>12-р - 3-р сар</b></font>
-        </td>
-        <td width="34%" align="center">
-          <font size="2" color="#cccccc"><b>4-р - 10-р сар</b></font>
-        </td>
-        <td width="33%" align="center">
-          <font size="2" color="#cccccc"><b>11-р сар</b></font>
-        </td>
-      </tr>
-      <tr height="10"><td colspan="3"></td></tr>
-      <tr>
-        <td width="33%">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-          </table>
-        </td>
-        <td width="34%">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-          </table>
-        </td>
-        <td width="33%">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="3"><td bgcolor="#cccccc"></td></tr>
-          </table>
-        </td>
-      </tr>
-      <tr height="5"><td colspan="3"></td></tr>
-      <tr>
-        <td align="center">
-          <font size="4" color="#92663e"><b>❄</b></font>
-        </td>
-        <td align="center">
-          <font size="4" color="#92663e"><b>☀</b></font>
-        </td>
-        <td align="center">
-          <font size="4" color="#999999"><b>🍂</b></font>
-        </td>
-      </tr>
-    </table>
+      <!-- OFF-SEASON SCHEDULE -->
+      <section class="schedule-card offseason-schedule">
+        <div class="schedule-header-dark">
+          <h3>🍂 ЗАВСАРЫН УЛИРАЛ</h3>
+          <p>Зөвхөн Арваннэгдүгээр сар</p>
+        </div>
+        <div class="offseason-grid">
+          <div class="offseason-day">
+            <div class="day-label">ДА - МЯ</div>
+            <div class="time-closed">ХААЛТТАЙ</div>
+          </div>
+          <div class="offseason-day">
+            <div class="day-label">ЛХ - БА</div>
+            <div class="time-open">4 PM<br />-<br />9 PM</div>
+          </div>
+          <div class="offseason-day">
+            <div class="day-label">БЯМБА</div>
+            <div class="time-open">8 AM<br />-<br />10 PM</div>
+          </div>
+          <div class="offseason-day">
+            <div class="day-label">НЯМ</div>
+            <div class="time-open">8 AM<br />-<br />9 PM</div>
+          </div>
+        </div>
+        <p class="schedule-note">
+          Хязгаарлагдмал цэс • Баталгаажуулахын тулд урьдчилан залгана уу
+        </p>
+      </section>
 
-    <br /><br /><br />
+      <!-- Important Notes Section -->
+      <section class="important-notes">
+        <h3>Чухал мэдээлэл</h3>
+        <div class="notes-grid">
+          <div class="note-item">
+            <h4>• Баярын өдрийн цаг</h4>
+            <p>
+              Томоохон баяр наадмын үеэр онцгой цагаар ажиллана. Манай вэбсайтыг
+              шалгах эсвэл урьдчилан залгана уу.
+            </p>
+          </div>
+          <div class="note-item">
+            <h4>• Цаг агаарын хаалт</h4>
+            <p>
+              Хүнд цаг агаарын үед заримдаа хаагддаг. Шинэчлэлийг манай нийгмийн
+              сүлжээнээс дагана уу.
+            </p>
+          </div>
+          <div class="note-item">
+            <h4>• Сүүлийн суулт</h4>
+            <p>Гал тогоо хаагдах цагаас 30 минутын өмнө хаагдана.</p>
+          </div>
+          <div class="note-item">
+            <h4>• Захиалга</h4>
+            <p>6+ хүний бүлэгт зөвлөмж өгдөг. (315) 357-3420 руу залгана уу</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- WINTER SEASON SCHEDULE - Full Width Grid Style -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5">
-      <tr>
-        <td colspan="2">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="4"><td bgcolor="#92663e"></td></tr>
-            <tr height="4"><td bgcolor="#7a5232"></td></tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td width="30%" valign="middle" bgcolor="#92663e">
-          <table width="100%" cellpadding="30">
-            <tr>
-              <td align="center">
-                <font size="7" color="white"><b>❄</b></font><br/>
-                <font size="5" color="white"><b>ӨВӨЛ</b></font><br/>
-                <font size="2" color="#e0e0e0">12-р - 3-р сар</font>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td width="70%" valign="top">
-          <table width="100%" cellpadding="30">
-            <tr>
-              <td>
-                <table width="100%" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="15">
-                  <tr bgcolor="#ffffff">
-                    <td width="50%"><font size="3" color="#333333"><b>ДА - ПҮ</b></font></td>
-                    <td width="50%"><font size="3" color="#666666">4:00 PM - 9:00 PM</font></td>
-                  </tr>
-                  <tr bgcolor="#fafafa">
-                    <td><font size="3" color="#333333"><b>БААСАН</b></font></td>
-                    <td><font size="3" color="#666666">4:00 PM - 11:00 PM</font></td>
-                  </tr>
-                  <tr bgcolor="#ffffff">
-                    <td><font size="3" color="#333333"><b>БЯ - НЯМ</b></font></td>
-                    <td><font size="3" color="#666666">8:00 AM - 11:00 PM</font></td>
-                  </tr>
-                </table>
-                <br/>
-                <font size="2" color="#999999">
-                  Баярын өдрүүдэд нэмэлт цаг • Галын суудал боломжтой
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="4"><td bgcolor="#7a5232"></td></tr>
-            <tr height="4"><td bgcolor="#92663e"></td></tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br /><br />
-
-    <!-- SUMMER SEASON SCHEDULE - Horizontal Split -->
-    <table width="70%" align="center" cellspacing="20" cellpadding="0">
-      <tr>
-        <td colspan="3" align="center" bgcolor="#92663e">
-          <table width="100%" cellpadding="15">
-            <tr>
-              <td align="center">
-                <font size="5" color="white"><b>☀ ЗУНЫ УЛИРАЛ</b></font>
-                <font size="3" color="#e0e0e0"> &nbsp;&nbsp;|&nbsp;&nbsp; Дөрөвдүгээр - Аравдугаар сар</font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td width="33%" valign="top">
-          <table width="100%" border="1" bordercolor="#92663e" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
-            <tr>
-              <td align="center">
-                <font size="3" color="#92663e"><b>ДА - ПҮ</b></font><br/><br/>
-                <font size="5" color="#333333"><b>8 AM</b></font><br/>
-                <font size="2" color="#999999">-с</font><br/>
-                <font size="5" color="#333333"><b>9 PM</b></font>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td width="33%" valign="top">
-          <table width="100%" border="1" bordercolor="#92663e" cellpadding="20" cellspacing="0" bgcolor="#fafafa">
-            <tr>
-              <td align="center">
-                <font size="3" color="#92663e"><b>БА - БЯ</b></font><br/><br/>
-                <font size="5" color="#333333"><b>8 AM</b></font><br/>
-                <font size="2" color="#999999">-с</font><br/>
-                <font size="5" color="#333333"><b>11 PM</b></font>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td width="34%" valign="top">
-          <table width="100%" border="1" bordercolor="#92663e" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
-            <tr>
-              <td align="center">
-                <font size="3" color="#92663e"><b>НЯМ</b></font><br/><br/>
-                <font size="5" color="#333333"><b>8 AM</b></font><br/>
-                <font size="2" color="#999999">-с</font><br/>
-                <font size="5" color="#333333"><b>9 PM</b></font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3" align="center">
-          <font size="2" color="#999999">
-            Twisters Зайрмаг өдөр бүр 12PM-9PM нээлттэй • Бүрэн патио хоолны үйлчилгээ
-          </font>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br /><br />
-
-    <!-- OFF-SEASON SCHEDULE - Stacked Boxes -->
-    <table width="60%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center" bgcolor="#333333">
-          <table width="100%" cellpadding="20">
-            <tr>
-              <td align="center">
-                <font size="5" color="white"><b>🍂 ЗАВСАРЫН УЛИРАЛ</b></font><br/>
-                <font size="2" color="#cccccc">Зөвхөн Арваннэгдүгээр сар</font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br/>
-
-    <table width="60%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="100%" bgcolor="#fafafa">
-          <table width="100%" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="25%" bgcolor="#ffffff">
-                <table width="100%" cellpadding="20">
-                  <tr>
-                    <td align="center">
-                      <font size="3" color="#333333"><b>ДА - МЯ</b></font><br/><br/>
-                      <font size="6" color="#999999"><b>ХААЛТТАЙ</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td width="25%" bgcolor="#f5f5f5">
-                <table width="100%" cellpadding="20">
-                  <tr>
-                    <td align="center">
-                      <font size="3" color="#333333"><b>ЛХ - БА</b></font><br/><br/>
-                      <font size="4" color="#92663e"><b>4 PM<br/>-<br/>9 PM</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td width="25%" bgcolor="#ffffff">
-                <table width="100%" cellpadding="20">
-                  <tr>
-                    <td align="center">
-                      <font size="3" color="#333333"><b>БЯМБА</b></font><br/><br/>
-                      <font size="4" color="#92663e"><b>8 AM<br/>-<br/>10 PM</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td width="25%" bgcolor="#f5f5f5">
-                <table width="100%" cellpadding="20">
-                  <tr>
-                    <td align="center">
-                      <font size="3" color="#333333"><b>НЯМ</b></font><br/><br/>
-                      <font size="4" color="#92663e"><b>8 AM<br/>-<br/>9 PM</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <table width="100%" cellpadding="15" bgcolor="#fafafa">
-            <tr>
-              <td align="center">
-                <font size="2" color="#999999">Хязгаарлагдмал цэс • Баталгаажуулахын тулд урьдчилан залгана уу</font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br /><br />
-
-    <!-- Decorative stripe transition -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0">
-      <tr height="2"><td width="30%"></td><td width="15%" bgcolor="#92663e"></td><td width="55%"></td></tr>
-      <tr height="2"><td width="30%"></td><td width="30%" bgcolor="#cccccc"></td><td width="40%"></td></tr>
-      <tr height="2"><td width="30%"></td><td width="20%" bgcolor="#e0e0e0"></td><td width="50%"></td></tr>
-    </table>
-
-    <br /><br />
-
-    <!-- Important Notes Section -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="100%" bgcolor="#fafafa">
-          <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="2%" bgcolor="#92663e"></td>
-              <td width="98%">
-                <table width="100%" cellpadding="30">
-                  <tr>
-                    <td>
-                      <font size="4" color="#333333"><b>Чухал мэдээлэл</b></font>
-                      <br /><br />
-                      <table width="100%" cellspacing="0" cellpadding="8">
-                        <tr>
-                          <td width="50%" valign="top">
-                            <font size="3" color="#666666">
-                              <b>• Баярын өдрийн цаг</b><br />
-                              Томоохон баяр наадмын үеэр онцгой цагаар ажиллана. Манай вэбсайтыг шалгах эсвэл урьдчилан залгана уу.
-                            </font>
-                          </td>
-                          <td width="50%" valign="top">
-                            <font size="3" color="#666666">
-                              <b>• Цаг агаарын хаалт</b><br />
-                              Хүнд цаг агаарын үед заримдаа хаагддаг. Шинэчлэлийг манай нийгмийн сүлжээнээс дагана уу.
-                            </font>
-                          </td>
-                        </tr>
-                        <tr height="10"><td colspan="2"></td></tr>
-                        <tr>
-                          <td valign="top">
-                            <font size="3" color="#666666">
-                              <b>• Сүүлийн суулт</b><br />
-                              Гал тогоо хаагдах цагаас 30 минутын өмнө хаагдана.
-                            </font>
-                          </td>
-                          <td valign="top">
-                            <font size="3" color="#666666">
-                              <b>• Захиалга</b><br />
-                              6+ хүний бүлэгт зөвлөмж өгдөг. (315) 357-3420 руу залгана уу
-                            </font>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr height="2"><td bgcolor="#92663e"></td></tr>
-            <tr height="2"><td bgcolor="#cccccc"></td></tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br /><br />
-
-    <!-- Contact CTA -->
-    <table width="50%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center">
-          <font size="4" color="#333333"><b>Цагийн талаар асуулт байна уу?</b></font><br /><br />
-          <font size="3" color="#666666">
-            <font color="#92663e"><b>(315) 357-3420</b></font> руу залгах<br />
-            эсвэл бодит цагийн шинэчлэлийг манай сошиал медиа дээр шалгаарай
-          </font>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br />
-
-    <!-- Decorative closing stripes -->
-    <table width="70%" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="20%">
-          <table width="60%" cellspacing="0" cellpadding="0">
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#cccccc"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#e0e0e0"></td></tr>
-          </table>
-        </td>
-        <td width="60%"></td>
-        <td width="20%" align="right">
-          <table width="60%" cellspacing="0" cellpadding="0">
-            <tr height="2"><td bgcolor="#e0e0e0"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#cccccc"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br />
+      <!-- Contact CTA -->
+      <section class="contact-cta">
+        <h3>Цагийн талаар асуулт байна уу?</h3>
+        <p>
+          <a href="tel:3153573420" class="phone-link">(315) 357-3420</a> руу
+          залгах<br />
+          эсвэл бодит цагийн шинэчлэлийг манай сошиал медиа дээр шалгаарай
+        </p>
+      </section>
+    </main>
 
     <!-- The following table is the FOOTER -->
     <footer>
       <hr />
-      <table width="100%" cellpadding="20" bgcolor="#92663e">
-        <tr>
-          <td width="33%" valign="top">
-            <font color="white">
-              <b>Up North Wood Fire & Grill Bar</b><br />
-              4907 State Route 28<br />
-              Eagle Bay, NY 13331<br />
-              Phone: (315) 357-3420
-            </font>
-          </td>
-          <td width="33%" align="center" valign="top">
-            <font color="white">
-              <b>Шуурхай холбоос</b><br />
-              <a href="menu.html"><font color="white">Цэс</font></a> |
-              <a href="about_us.html"><font color="white">Бидний тухай</font></a> |
-              <a href="contact.html"><font color="white">Холбоо барих</font></a
-              ><br />
-              <a href="../Twister/index.html"
-                ><font color="white">Twisters Зайрмаг</font></a
-              >
-            </font>
-          </td>
-          <td width="33%" align="right" valign="top">
-            <font color="white">
-              <b>Биднийг дагах</b><br />
-              Facebook | Instagram<br />
-              Twitter | Yelp
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" align="center">
-            <font color="white">
-              <small>
-                &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх
-                хуулиар хамгаалагдсан.<br />
-                Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны
-                нэр]-ээр бүтээсэн
-              </small>
-            </font>
-          </td>
-        </tr>
-      </table>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-column footer-left">
+            <b>Up North Wood Fire & Grill Bar</b>
+            4907 State Route 28<br />
+            Eagle Bay, NY 13331<br />
+            Phone: (315) 357-3420
+          </div>
+
+          <div class="footer-column footer-center">
+            <b>Шуурхай холбоос</b>
+            <div class="footer-links">
+              <a href="../Informations/menu.html">Хоолны цэс</a> |
+              <a href="../Drinks menu/drinks.html">Уух зүйлс</a> |
+              <a href="../Informations/about_us.html">Бидний тухай</a><br />
+              <a href="../Informations/events.html">Эвентүүд</a> |
+              <a href="../Informations/gift_card.html">Бэлгийн карт</a> |
+              <a href="../Twister/index.html">Twisters Зайрмаг</a>
+            </div>
+          </div>
+
+          <div class="footer-column footer-right">
+            <b>Биднийг дагах</b>
+            Facebook | Instagram<br />
+            Twitter | Yelp
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <small>
+            &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар
+            хамгаалагдсан.<br />
+            Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
+          </small>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

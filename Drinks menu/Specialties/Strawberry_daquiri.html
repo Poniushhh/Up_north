@@ -5,51 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strawberry Daiquiri Slushie - Specialty Drinks</title>
   </head>
+  <link rel="stylesheet" href="../../Informations/style.css" />
   <body>
     <!-- The following table is the HEADER -->
     <header>
-      <table width="100%">
-        <tr height="20">
-          <th rowspan="2" width="8%">
-            <a href="../Informations/index.html">
-                <img src="../../src/logo.jpg" alt="Restaurant logo" width="100" />
-            </a>
-          </th>
-          <th colspan="6"></th>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/about_us.html"><font color="black" >Events</font></a></td>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/schedule.html"><font color="black" >Schedule</font></a></td>
-        </tr>
-        <tr height="80">
-          <td width="5%" valign="middle">
-            <a href="../Twister/index.html">
-                <img src="../../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
-            </a>
-          </td>
-          <td width="30%"></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/menu.html"><font color="black" ><h3>Menu</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Drinks menu/drinks.html"><font color="black" ><h3>Drink Menu</h3></font></a>
-          </td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/events.html"><font color="black" ><h3>Events</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/gift_card.html"><font color="black" ><h3>Gift card</h3></font></a></td>
-          <td colspan="2" align="center" valign="middle">
-            <a href="#reserve">
-              <svg width="180" height="50">
-                <rect width="180" height="50" fill="#92663e" rx="25" />
-                <text
-                  x="90"
-                  y="32"
-                  fill="white"
-                  font-size="18"
-                  font-weight="bold"
-                  text-anchor="middle"
-                >
-                  Reserve
-                </text>
-              </svg>
-            </a>
-          </td>
-        </tr>
-      </table>
+      <div class="header-container">
+        <!-- Row 1, Column 1: Logo (rowspan 2) -->
+        <div class="logo-cell">
+          <a href="../../Informations/index.html">
+            <img src="../../src/logo.jpg" alt="Restaurant logo" width="100" />
+          </a>
+        </div>
+
+        <!-- Row 1, Columns 2-7: Empty (colspan 6) -->
+        <div class="empty-colspan"></div>
+
+        <!-- Row 1, Column 8: Бидний тухай -->
+        <div class="top-link-1">
+          <a href="../../Informations/about_us.html">Бидний тухай</a>
+        </div>
+
+        <!-- Row 1, Column 9: Хуваарь -->
+        <div class="top-link-2">
+          <a href="../../Informations/schedule.html">Хуваарь</a>
+        </div>
+
+        <!-- Row 2, Column 2: Twister Logo -->
+        <div class="twister-cell">
+          <a href="../../Twister/index.html">
+            <img
+              src="../../src/twisters_logo.jpeg"
+              alt="Twisters logo"
+              width="80"
+            />
+          </a>
+        </div>
+
+        <!-- Row 2, Column 3: Empty 30% -->
+        <div class="empty-spacer"></div>
+
+        <!-- Row 2, Column 4: Хоолны цэс -->
+        <div class="menu-link-1">
+          <a href="../../Informations/menu.html"><h3>Хоолны цэс</h3></a>
+        </div>
+
+        <!-- Row 2, Column 5: Уух зүйлс -->
+        <div class="menu-link-2">
+          <a href="../../Drinks menu/drinks.html"><h3>Уух зүйлс</h3></a>
+        </div>
+
+        <!-- Row 2, Column 6: Эвентүүд -->
+        <div class="menu-link-3">
+          <a href="../../Informations/events.html"><h3>Эвентүүд</h3></a>
+        </div>
+
+        <!-- Row 2, Column 7: Бэлгийн карт -->
+        <div class="menu-link-4">
+          <a href="../../Informations/gift_card.html"><h3>Бэлгийн карт</h3></a>
+        </div>
+
+        <!-- Row 2, Columns 8-9: Button (colspan 2) -->
+        <div class="button-cell">
+          <a href="../../Informations/book.html" class="book-button">
+            Ширээ захиалах
+          </a>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -122,7 +143,13 @@
     <br />
 
     <!-- Drink Title with Underline -->
-    <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <table
+      width="80%"
+      align="center"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+    >
       <tr>
         <td>
           <font color="#92663e"><h1>STRAWBERRY DAIQUIRI SLUSHIE</h1></font>
@@ -138,7 +165,13 @@
     <br />
 
     <!-- Row 3: Two Columns (Quick Info + About) -->
-    <table width="80%" align="center" cellspacing="0" cellpadding="0" border="0">
+    <table
+      width="80%"
+      align="center"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
       <tr>
         <!-- Column 1: Quick Info -->
         <td width="25%" valign="top">
@@ -175,7 +208,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" align="center" bgcolor="#92663e" height="45">
+                    <td
+                      colspan="2"
+                      align="center"
+                      bgcolor="#92663e"
+                      height="45"
+                    >
                       <font color="white" size="5"><b>$10.99</b></font>
                     </td>
                   </tr>
@@ -187,7 +225,13 @@
 
         <!-- Vertical Separator -->
         <td width="1%" valign="middle">
-          <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+          <table
+            width="100%"
+            height="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+          >
             <tr>
               <td width="40%"></td>
               <td width="20%" bgcolor="#e0e0e0"></td>
@@ -201,14 +245,24 @@
           <table width="100%" cellpadding="25" border="0" bgcolor="#ffffff">
             <tr>
               <td>
-                <font size="5"><b>The Refreshing Strawberry Daiquiri Slushie</b></font>
+                <font size="5"
+                  ><b>The Refreshing Strawberry Daiquiri Slushie</b></font
+                >
                 <br /><br />
                 <font size="3" color="#555555">
-                  Sweet, tart, and frozen to perfection, our Strawberry Daiquiri Slushie is a crowd favorite. Fresh strawberries blended with rum and lime create a drink that's both refreshing and delicious.
+                  Sweet, tart, and frozen to perfection, our Strawberry Daiquiri
+                  Slushie is a crowd favorite. Fresh strawberries blended with
+                  rum and lime create a drink that's both refreshing and
+                  delicious.
                   <br /><br />
-                  <b>Origin:</b> The classic Daiquiri was invented in Cuba in the early 1900s. The frozen strawberry version became wildly popular in the 1970s and 80s, bringing a fruity twist to the Cuban classic.
-                  <br /><br />
-                  <b>Why It's Special:</b> This frozen delight perfectly balances the sweetness of strawberries with the tartness of fresh lime. The slushie texture makes it incredibly refreshing and dangerously easy to drink.
+                  <b>Origin:</b> The classic Daiquiri was invented in Cuba in
+                  the early 1900s. The frozen strawberry version became wildly
+                  popular in the 1970s and 80s, bringing a fruity twist to the
+                  Cuban classic. <br /><br />
+                  <b>Why It's Special:</b> This frozen delight perfectly
+                  balances the sweetness of strawberries with the tartness of
+                  fresh lime. The slushie texture makes it incredibly refreshing
+                  and dangerously easy to drink.
                 </font>
               </td>
             </tr>
@@ -263,7 +317,13 @@
 
         <!-- Vertical Separator -->
         <td width="2%" valign="middle" bgcolor="#fafafa">
-          <table width="100%" height="90%" cellpadding="0" cellspacing="0" border="0">
+          <table
+            width="100%"
+            height="90%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+          >
             <tr>
               <td width="40%"></td>
               <td width="20%" bgcolor="#e0e0e0"></td>
@@ -331,52 +391,45 @@
 
     <br /><br />
 
-    <!-- FOOTER -->
+    <!-- The following table is the FOOTER -->
     <footer>
       <hr />
-      <table width="100%" border="0" cellpadding="20" bgcolor="#92663e">
-        <tr>
-          <td width="33%" valign="top">
-            <font color="white">
-              <b>Up North Wood Fire & Grill Bar</b><br />
-              4907 State Route 28<br />
-              Eagle Bay, NY 13331<br />
-              Phone: (315) 357-3420
-            </font>
-          </td>
-          <td width="33%" align="center" valign="top">
-            <font color="white">
-              <b>Quick Links</b><br />
-              <a href="menu.html"><font color="white">Menu</font></a> |
-              <a href="about.html"><font color="white">About</font></a> |
-              <a href="contact.html"><font color="white">Contact</font></a
-              ><br />
-              <a href="twisters.html"
-                ><font color="white">Twisters Ice Cream</font></a
-              >
-            </font>
-          </td>
-          <td width="33%" align="right" valign="top">
-            <font color="white">
-              <b>Follow Us</b><br />
-              Facebook | Instagram<br />
-              Twitter | Yelp
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" align="center">
-            <font color="white">
-              <small>
-                &copy; 2024 Up North Wood Fire & Grill Bar. All Rights
-                Reserved.<br />
-                Website designed for educational purposes | Created by [Student
-                Names]
-              </small>
-            </font>
-          </td>
-        </tr>
-      </table>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-column footer-left">
+            <b>Up North Wood Fire & Grill Bar</b>
+            4907 State Route 28<br />
+            Eagle Bay, NY 13331<br />
+            Phone: (315) 357-3420
+          </div>
+
+          <div class="footer-column footer-center">
+            <b>Шуурхай холбоос</b>
+            <div class="footer-links">
+              <a href="../../Informations/menu.html">Хоолны цэс</a> |
+              <a href="../../Drinks menu/drinks.html">Уух зүйлс</a> |
+              <a href="../../Informations/about_us.html">Бидний тухай</a><br />
+              <a href="../../Informations/events.html">Эвентүүд</a> |
+              <a href="../../Informations/gift_card.html">Бэлгийн карт</a> |
+              <a href="../../Twister/index.html">Twisters Зайрмаг</a>
+            </div>
+          </div>
+
+          <div class="footer-column footer-right">
+            <b>Биднийг дагах</b>
+            Facebook | Instagram<br />
+            Twitter | Yelp
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <small>
+            &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар
+            хамгаалагдсан.<br />
+            Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
+          </small>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

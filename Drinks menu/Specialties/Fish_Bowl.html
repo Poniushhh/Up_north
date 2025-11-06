@@ -1,379 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fish Bowl - Specialty Drinks</title>
-  </head>
-  <body>
-    <!-- The following table is the HEADER -->
+    <link rel="stylesheet" href="../../Informations/style.css">
+    <link rel="stylesheet" href="fish_bowl.css">
+</head>
+<body>
+    <!-- HEADER -->
     <header>
-      <table width="100%">
-        <tr height="20">
-          <th rowspan="2" width="8%">
-            <a href="../Informations/index.html">
-                <img src="../../src/logo.jpg" alt="Restaurant logo" width="100" />
-            </a>
-          </th>
-          <th colspan="6"></th>
-          <td width="7%" align="center" valign="bottom"><a href="../../Informations/about_us.html"><font color="black" >Бидний тухай</font></a></td>
-          <td width="7%" align="center" valign="bottom"><a href="../../Informations/schedule.html"><font color="black" >Хуваарь</font></a></td>
-        </tr>
-        <tr height="80">
-          <td width="5%" valign="middle">
-            <a href="../Twister/index.html">
-                <img src="../../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
-            </a>
-          </td>
-          <td width="30%"></td>
-          <td width="8%" align="center" valign="middle"><a href="../../Informations/menu.html"><font color="black" ><h3>Хоолны цэс</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../../Drinks menu/drinks.html"><font color="black" ><h3>Уух зүйлс</h3></font></a>
-          </td>
-          <td width="8%" align="center" valign="middle"><a href="../../Informations/events.html"><font color="black" ><h3>Эвентүүд</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../../Informations/gift_card.html"><font color="black" ><h3>Бэлгийн карт</h3></font></a></td>
-          <td colspan="2" align="center" valign="middle">
-            <a href="#reserve">
-              <svg width="180" height="50">
-                <rect width="180" height="50" fill="#92663e" rx="25" />
-                <text
-                  x="90"
-                  y="32"
-                  fill="white"
-                  font-size="18"
-                  font-weight="bold"
-                  text-anchor="middle"
-                >
-                  Захиалга хийх
-                </text>
-              </svg>
-            </a>
-          </td>
-        </tr>
-      </table>
+        <div class="header-container">
+            <div class="logo-cell">
+                <a href="../../Informations/index.html">
+                    <img src="../../src/logo.jpg" alt="Restaurant logo" width="100" />
+                </a>
+            </div>
+            <div class="empty-colspan"></div>
+            <div class="top-link-1">
+                <a href="../../Informations/about_us.html">Бидний тухай</a>
+            </div>
+            <div class="top-link-2">
+                <a href="../../Informations/schedule.html">Хуваарь</a>
+            </div>
+            <div class="twister-cell">
+                <a href="../../Twister/index.html">
+                    <img src="../../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
+                </a>
+            </div>
+            <div class="empty-spacer"></div>
+            <div class="menu-link-1">
+                <a href="../../Informations/menu.html"><h3>Хоолны цэс</h3></a>
+            </div>
+            <div class="menu-link-2">
+                <a href="../../Drinks menu/drinks.html"><h3>Уух зүйлс</h3></a>
+            </div>
+            <div class="menu-link-3">
+                <a href="../../Informations/events.html"><h3>Эвентүүд</h3></a>
+            </div>
+            <div class="menu-link-4">
+                <a href="../../Informations/gift_card.html"><h3>Бэлгийн карт</h3></a>
+            </div>
+            <div class="button-cell">
+                <a href="../../Informations/book.html" class="book-button">
+                    Ширээ захиалах
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <br />
+    <div class="content-wrapper">
+        
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="../src/fish_bowl_1.jpg" alt="Fish Bowl">
+            <img src="../src/fish_bowl_2.jpg" alt="Fish Bowl">
+            <img src="../src/fish_bowl_3.jpg" alt="Fish Bowl">
+            <img src="../src/fish_bowl_4.jpg" alt="Fish Bowl">
+        </div>
 
-    <!-- Row 1: Multiple Images -->
-    <table
-      width="80%"
-      align="center"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-    >
-      <tr>
-        <td align="center">
-          <img
-            src="../src/fish_bowl_1.jpg"
-            alt="Fish Bowl"
-            height="260"
-          />
-        </td>
-        <td align="center">
-          <img
-            src="../src/fish_bowl_2.jpg"
-            alt="Fish Bowl"
-            height="260"
-          />
-        </td>
-        <td align="center">
-          <img
-            src="../src/fish_bowl_3.jpg"
-            alt="Fish Bowl"
-            height="260"
-          />
-        </td>
-        <td align="center">
-          <img
-            src="../src/fish_bowl_4.jpg"
-            alt="Fish Bowl"
-            height="260"
-          />
-        </td>
-      </tr>
-    </table>
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../../Informations/index.html">Нүүр</a>
+            <span class="separator">&gt;</span>
+            <a href="../drinks.html">Ундааны цэс</a>
+            <span class="separator">&gt;</span>
+            <a href="specialty_drinks.html">Онцгой ундаа</a>
+            <span class="separator">&gt;</span>
+            <span class="current">Fish Bowl</span>
+        </div>
 
-    <br />
+        <!-- Drink Title -->
+        <div class="drink-title">
+            <h1>FISH BOWL</h1>
+            <hr class="title-underline">
+        </div>
 
-    <!-- Row 2: Breadcrumb Navigation -->
-    <table width="80%" align="center" height="35" border="0">
-      <tr>
-        <td align="left" valign="middle">
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="../../Informations/index.html"><font color="#333333">Нүүр</font></a>
-          <font color="#999999"> &gt; </font>
-          <a href="../drinks.html"><font color="#333333">Ундааны цэс</font></a>
-          <font color="#999999"> &gt; </font>
-          <a href="specialty_drinks.html"
-            ><font color="#333333">Онцгой ундаа</font></a
-          >
-          <font color="#999999"> &gt; </font>
-          <font color="#92663e"><b>Fish Bowl</b></font>
-        </td>
-      </tr>
-    </table>
+        <!-- Main Info Section -->
+        <div class="main-info-section">
+            <!-- Quick Info Sidebar -->
+            <div class="quick-info">
+                <div class="info-box">
+                    <div class="info-item">
+                        <div class="info-label">ҮНД СПИРТ</div>
+                        <div class="info-value">Арх ба Ром</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">АМТ</div>
+                        <div class="info-value">Халуун орны жимсний</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">ХҮЧТЭЙ</div>
+                        <div class="info-value">Хүчтэй</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">ТОХИРОМЖТОЙ</div>
+                        <div class="info-value">Үдэшлэг</div>
+                    </div>
+                    <div class="info-price">$18.99</div>
+                </div>
+            </div>
 
-    <br />
+            <!-- Vertical Divider -->
+            <div class="vertical-divider"></div>
 
-    <!-- Drink Title with Underline -->
-    <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td>
-          <font color="#92663e"><h1>FISH BOWL</h1></font>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <hr width="100%" size="2" color="#92663e" />
-        </td>
-      </tr>
-    </table>
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>Үдэшлэгт бэлэн Fish Bowl</h2>
+                <p>
+                    Fish Bowl бол том аяганд хуваалцан уух хөгжилтэй коктейль бөгөөд бүлэгт төгс тохирно. Тод цэнхэр өнгө болон гумми загасан чимэглэлээрээ инстаграмд зөвшөөрөгдсөн амттай адил.
+                </p>
+                <p>
+                    <strong>Гарал үүсэл:</strong> Энэ шинэлэг коктейль 1990-ээд онд далайн эргийн бар болон үдэшлэгийн газруудад алдартай болсон. Том хэмжээ болон халуун орны амт нь баяр ёслол болон бүлгийн цуглаанд шууд хит болсон.
+                </p>
+                <p>
+                    <strong>Яагаад онцгой вэ:</strong> Fish Bowl бол зүгээр л ундаа биш, энэ бол туршлага юм. Хуваалцахад зориулсан олон сорвиор хамт үйлчилдэг энэхүү халуун орны хольц нь хүмүүсийг нэгтгэж, дурсамжтай мөчүүдийг бүтээдэг.
+                </p>
+            </div>
+        </div>
 
-    <br />
+        <!-- Ingredients & Modifications Section -->
+        <div class="details-section">
+            <!-- Ingredients -->
+            <div class="ingredients-column">
+                <h3>НАЙРЛАГА</h3>
+                <div class="ingredients-content">
+                    <p><strong>Үндсэн найрлага:</strong></p>
+                    <ul>
+                        <li>2 oz Цэнхэр Кюрасао</li>
+                        <li>2 oz Арх</li>
+                        <li>1 oz Кокосын Ром</li>
+                        <li>4 oz Хан боргоцойн шүүс</li>
+                        <li>2 oz Амтат ба исгэлэн холимог</li>
+                        <li>Нимбэг-Лайм содатай</li>
+                    </ul>
+                    <p><strong>Чимэглэл:</strong></p>
+                    <ul>
+                        <li>Гумми загас</li>
+                        <li>Жүржийн зүсмэл</li>
+                        <li>Хуваалцах сорвиор</li>
+                    </ul>
+                </div>
+            </div>
 
-    <!-- Row 3: Two Columns (Quick Info + About) -->
-    <table width="80%" align="center" cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <!-- Column 1: Quick Info -->
-        <td width="25%" valign="top">
-          <table width="100%" cellpadding="20" border="0">
-            <tr>
-              <td>
-                <table width="100%" cellpadding="8" cellspacing="0" border="0">
-                  <tr>
-                    <td colspan="2" align="center">
-                      <font color="#666666" size="2"><b>ҮНД СПИРТ</b></font
-                      ><br />
-                      <font size="4">Арх ба Ром</font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" align="center">
-                      <font color="#666666" size="2"><b>АМТ</b></font
-                      ><br />
-                      <font size="4">Халуун орны жимсний</font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" align="center">
-                      <font color="#666666" size="2"><b>ХҮЧТЭЙ</b></font
-                      ><br />
-                      <font size="4">Хүчтэй</font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" align="center">
-                      <font color="#666666" size="2"><b>ТОХИРОМЖТОЙ</b></font
-                      ><br />
-                      <font size="4">Үдэшлэг</font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" align="center" bgcolor="#92663e" height="45">
-                      <font color="white" size="5"><b>$18.99</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
+            <!-- Vertical Divider -->
+            <div class="vertical-divider-thin"></div>
 
-        <!-- Vertical Separator -->
-        <td width="1%" valign="middle">
-          <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td width="40%"></td>
-              <td width="20%" bgcolor="#e0e0e0"></td>
-              <td width="40%"></td>
-            </tr>
-          </table>
-        </td>
+            <!-- Modifications -->
+            <div class="modifications-column">
+                <h3>ҮНДСЭН АРХИНЫ ӨӨРЧЛӨЛТ</h3>
+                <div class="modifications-content">
+                    <div class="modification-item">
+                        <div class="mod-name">Улаан Fish Bowl</div>
+                        <div class="mod-description">
+                            <strong>Гренадин ба Интоорын арх</strong> хэрэглэх<br>
+                            <span class="mod-note">Улаан өнгийн хувилбар</span>
+                        </div>
+                    </div>
+                    <div class="modification-item">
+                        <div class="mod-name">Ногоон Fish Bowl</div>
+                        <div class="mod-description">
+                            Оронд нь <strong>Амтат хүнсний ликёр</strong> хэрэглэх<br>
+                            <span class="mod-note">Тод ногоон халуун орны эргэлт</span>
+                        </div>
+                    </div>
+                    <div class="modification-item">
+                        <div class="mod-name">Ягаан Fish Bowl</div>
+                        <div class="mod-description">
+                            <strong>Chambord ба усан үзмийн шүүс</strong> нэмэх<br>
+                            <span class="mod-note">Жимсний амттай ягаан хувилбар</span>
+                        </div>
+                    </div>
+                    <div class="modification-item">
+                        <div class="mod-name">Текила Fish Bowl</div>
+                        <div class="mod-description">
+                            Архыг <strong>Текила</strong>-аар солих<br>
+                            <span class="mod-note">Мексикийн далайн эргийн үдэшлэгийн хэв маяг</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Column 2: About the Drink -->
-        <td width="73%" valign="top">
-          <table width="100%" cellpadding="25" border="0" bgcolor="#ffffff">
-            <tr>
-              <td>
-                <font size="5"><b>Үдэшлэгт бэлэн Fish Bowl</b></font>
-                <br /><br />
-                <font size="3" color="#555555">
-                  Fish Bowl бол том аяганд хуваалцан уух хөгжилтэй коктейль бөгөөд бүлэгт төгс тохирно. Тод цэнхэр өнгө болон гумми загасан чимэглэлээрээ инстаграмд зөвшөөрөгдсөн амттай адил.
-                  <br /><br />
-                  <b>Гарал үүсэл:</b> Энэ шинэлэг коктейль 1990-ээд онд далайн эргийн бар болон үдэшлэгийн газруудад алдартай болсон. Том хэмжээ болон халуун орны амт нь баяр ёслол болон бүлгийн цуглаанд шууд хит болсон.
-                  <br /><br />
-                  <b>Яагаад онцгой вэ:</b> Fish Bowl бол зүгээр л ундаа биш, энэ бол туршлага юм. Хуваалцахад зориулсан олон сорвиор хамт үйлчилдэг энэхүү халуун орны хольц нь хүмүүсийг нэгтгэж, дурсамжтай мөчүүдийг бүтээдэг.
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br />
-
-    <!-- Row 4: Two Columns (Ingredients + Modifications) -->
-    <table
-      width="80%"
-      align="center"
-      cellspacing="0"
-      cellpadding="0"
-      border="1"
-      bordercolor="#e0e0e0"
-    >
-      <tr>
-        <!-- Column 1: Ingredients -->
-        <td width="49%" valign="top">
-          <table width="100%" cellpadding="25" border="0">
-            <tr height="50">
-              <td>
-                <font size="4"><b>НАЙРЛАГА</b></font>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <font size="3">
-                  <b>Үндсэн найрлага:</b>
-                  <ul>
-                    <li>2 oz Цэнхэр Кюрасао</li>
-                    <li>2 oz Арх</li>
-                    <li>1 oz Кокосын Ром</li>
-                    <li>4 oz Хан боргоцойн шүүс</li>
-                    <li>2 oz Амтат ба исгэлэн холимог</li>
-                    <li>Нимбэг-Лайм содатой</li>
-                  </ul>
-                  <br />
-                  <b>Чимэглэл:</b>
-                  <ul>
-                    <li>Гумми загас</li>
-                    <li>Жүржийн зүсмэл</li>
-                    <li>Хуваалцах сорвиор</li>
-                  </ul>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-
-        <!-- Vertical Separator -->
-        <td width="2%" valign="middle" bgcolor="#fafafa">
-          <table width="100%" height="90%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td width="40%"></td>
-              <td width="20%" bgcolor="#e0e0e0"></td>
-              <td width="40%"></td>
-            </tr>
-          </table>
-        </td>
-
-        <!-- Column 2: Modifications -->
-        <td width="49%" valign="top">
-          <table width="100%" cellpadding="25" border="0" bgcolor="#fafafa">
-            <tr height="50">
-              <td>
-                <font size="4"><b>ҮНДСЭН АРХИНЫ ӨӨРЧЛӨЛТ</b></font>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <font size="3">
-                  <table width="100%" cellpadding="10" cellspacing="0">
-                    <tr>
-                      <td width="35%" valign="top"><b>Улаан Fish Bowl</b></td>
-                      <td width="65%" valign="top">
-                        <b>Гренадин ба Интоорын арх</b> хэрэглэх<br />
-                        <font size="2" color="#666666"
-                          >Улаан өнгийн хувилбар</font
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top"><b>Ногоон Fish Bowl</b></td>
-                      <td valign="top">
-                        Оронд нь <b>Амтат хүнсний ликёр</b> хэрэглэх<br />
-                        <font size="2" color="#666666"
-                          >Тод ногоон халуун орны эргэлт</font
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top"><b>Ягаан Fish Bowl</b></td>
-                      <td valign="top">
-                        <b>Chambord ба усан үзмийн шүүс</b> нэмэх<br />
-                        <font size="2" color="#666666"
-                          >Жимсний амттай ягаан хувилбар</font
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top"><b>Текила Fish Bowl</b></td>
-                      <td valign="top">
-                        Архыг <b>Текила</b>-аар солих<br />
-                        <font size="2" color="#666666"
-                          >Мексикийн далайн эргийн үдэшлэгийн хэв маяг</font
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br />
+    </div>
 
     <!-- FOOTER -->
     <footer>
-      <hr />
-      <table width="100%" border="0" cellpadding="20" bgcolor="#92663e">
-        <tr>
-          <td width="33%" valign="top">
-            <font color="white">
-              <b>Up North Wood Fire & Grill Bar</b><br />
-              4907 State Route 28<br />
-              Eagle Bay, NY 13331<br />
-              Phone: (315) 357-3420
-            </font>
-          </td>
-          <td width="33%" align="center" valign="top">
-            <font color="white">
-              <b>Шуурхай холбоос</b><br />
-              <a href="../../Informations/menu.html"><font color="white">Цэс</font></a> |
-              <a href="../../Informations/about_us.html"><font color="white">Бидний тухай</font></a> |
-              <a href="../../Informations/contact.html"><font color="white">Холбоо барих</font></a
-              ><br />
-              <a href="../../Twister/index.html"
-                ><font color="white">Twisters Зайрмаг</font></a
-              >
-            </font>
-          </td>
-          <td width="33%" align="right" valign="top">
-            <font color="white">
-              <b>Биднийг дагах</b><br />
-              Facebook | Instagram<br />
-              Twitter | Yelp
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" align="center">
-            <font color="white">
-              <small>
-                &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх
-                хуулиар хамгаалагдсан.<br />
-                Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны
-                нэр]-ээр бүтээсэн
-              </small>
-            </font>
-          </td>
-        </tr>
-      </table>
+        <hr>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-column footer-left">
+                    <strong>Up North Wood Fire & Grill Bar</strong><br>
+                    4907 State Route 28<br>
+                    Eagle Bay, NY 13331<br>
+                    Phone: (315) 357-3420
+                </div>
+
+                <div class="footer-column footer-center">
+                    <strong>Шуурхай холбоос</strong>
+                    <div class="footer-links">
+                        <a href="../../Informations/menu.html">Хоолны цэс</a> |
+                        <a href="../../Drinks menu/drinks.html">Уух зүйлс</a> |
+                        <a href="../../Informations/about_us.html">Бидний тухай</a><br>
+                        <a href="../../Informations/events.html">Эвентүүд</a> |
+                        <a href="../../Informations/gift_card.html">Бэлгийн карт</a> |
+                        <a href="../../Twister/index.html">Twisters Зайрмаг</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-right">
+                    <strong>Биднийг дагах</strong><br>
+                    Facebook | Instagram<br>
+                    Twitter | Yelp
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <small>
+                    &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар хамгаалагдсан.<br>
+                    Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
+                </small>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

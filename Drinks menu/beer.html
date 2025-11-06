@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beer - Up North Wood Fire & Grill Bar</title>
 </head>
+<link rel="stylesheet" href="beer.css">
 <body>
   <!-- HEADER (same as drinks.html) -->
   <header>
@@ -43,6 +44,96 @@
   </header>
 
   <hr>
+
+
+  <section class="beer-page">
+  <h1>Our Beers</h1>
+  <p class="intro">Welcome to the Tavern Cellar — where every sip has a story.</p>
+
+  <div class="beer-selector">
+    <input type="radio" id="bottle" name="beer" checked>
+    <label for="bottle" class="beer-tab">Bottle Beers</label>
+
+    <input type="radio" id="can" name="beer">
+    <label for="can" class="beer-tab">Can Beers</label>
+
+    <input type="radio" id="tap" name="beer">
+    <label for="tap" class="beer-tab">Tap Beers</label>
+
+    <div class="beer-content" id="bottle-content">
+      <h2>🍾 Bottle Beers</h2>
+      <div class="beer-gallery">
+        <div class="beer-card">
+          <img src="images/bottle1.png" alt="Golden Ale">
+          <p>Golden Ale — smooth & crisp</p>
+        </div>
+        <div class="beer-card">
+          <img src="images/bottle2.png" alt="Dark Lager">
+          <p>Dark Lager — rich and malty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="beer-content" id="can-content">
+      <h2>🥫 Can Beers</h2>
+      <div class="beer-gallery">
+        <div class="beer-card">
+          <img src="images/can1.png" alt="Citrus IPA">
+          <p>Citrus IPA — bold & hoppy</p>
+        </div>
+        <div class="beer-card">
+          <img src="images/can2.png" alt="Wheat Brew">
+          <p>Wheat Brew — light and refreshing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="beer-content" id="tap-content">
+  <h2>🍺 Tap Beers</h2>
+  <div class="tap-bar">
+    <!-- IPA -->
+    <div class="tap ipa">
+      <div class="handle"></div>
+      <div class="spout"></div>
+      <div class="glass">
+        <div class="beer-fill"></div>
+        <div class="foam"></div>
+      </div>
+      <p class="beer-name">Citrus IPA</p>
+      <p class="beer-type">Hoppy • Bright • 6.5%</p>
+    </div>
+
+    <!-- Stout -->
+    <div class="tap stout">
+      <div class="handle"></div>
+      <div class="spout"></div>
+      <div class="glass">
+        <div class="beer-fill"></div>
+        <div class="foam"></div>
+      </div>
+      <p class="beer-name">Midnight Stout</p>
+      <p class="beer-type">Rich • Creamy • 5.2%</p>
+    </div>
+
+    <!-- Pilsner -->
+    <div class="tap pilsner">
+      <div class="handle"></div>
+      <div class="spout"></div>
+      <div class="glass">
+        <div class="beer-fill"></div>
+        <div class="foam"></div>
+      </div>
+      <p class="beer-name">Golden Pilsner</p>
+      <p class="beer-type">Crisp • Smooth • 4.8%</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
 
   <!-- Title Section -->
   <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#9da171">

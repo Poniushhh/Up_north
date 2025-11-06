@@ -5,490 +5,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Up North Wood Fire & Grill Bar - Eagle Bay, NY</title>
   </head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
   <body>
     <!-- The following table is the HEADER -->
     <header>
-      <table width="100%">
-        <tr height="20">
-          <th rowspan="2" width="8%">
-            <a href="../Informations/index.html">
-                <img src="../src/logo.jpg" alt="Restaurant logo" width="100" />
-            </a>
-          </th>
-          <th colspan="6"></th>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/about_us.html"><font color="black" >Бидний тухай</font></a></td>
-          <td width="7%" align="center" valign="bottom"><a href="../Informations/schedule.html"><font color="black" >Хуваарь</font></a></td>
-        </tr>
-        <tr height="80">
-          <td width="5%" valign="middle">
-            <a href="../Twister/index.html">
-                <img src="../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
-            </a>
-          </td>
-          <td width="30%"></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/menu.html"><font color="black" ><h3>Хоолны цэс</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Drinks menu/drinks.html"><font color="black" ><h3>Уух зүйлс</h3></font></a>
-          </td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/events.html"><font color="black" ><h3>Эвентүүд</h3></font></a></td>
-          <td width="8%" align="center" valign="middle"><a href="../Informations/gift_card.html"><font color="black" ><h3>Бэлгийн карт</h3></font></a></td>
-          <td colspan="2" align="center" valign="middle">
-            <a href="../Informations/book.html">
-              <svg width="180" height="50">
-                <rect width="180" height="50" fill="#92663e" rx="25" />
-                <text
-                  x="90"
-                  y="32"
-                  fill="white"
-                  font-size="18"
-                  font-weight="bold"
-                  text-anchor="middle"
-                >
-                  Захиалга хийх
-                </text>
-              </svg>
-            </a>
-          </td>
-        </tr>
-      </table>
+        <div class="header-container">
+            <!-- Row 1, Column 1: Logo (rowspan 2) -->
+            <div class="logo-cell">
+                <a href="../Informations/index.html">
+                    <img src="../src/logo.jpg" alt="Restaurant logo" width="100" />
+                </a>
+            </div>
+
+            <!-- Row 1, Columns 2-7: Empty (colspan 6) -->
+            <div class="empty-colspan"></div>
+
+            <!-- Row 1, Column 8: Бидний тухай -->
+            <div class="top-link-1">
+                <a href="../Informations/about_us.html">Бидний тухай</a>
+            </div>
+
+            <!-- Row 1, Column 9: Хуваарь -->
+            <div class="top-link-2">
+                <a href="../Informations/schedule.html">Хуваарь</a>
+            </div>
+
+            <!-- Row 2, Column 2: Twister Logo -->
+            <div class="twister-cell">
+                <a href="../Twister/index.html">
+                    <img src="../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
+                </a>
+            </div>
+
+            <!-- Row 2, Column 3: Empty 30% -->
+            <div class="empty-spacer"></div>
+
+            <!-- Row 2, Column 4: Хоолны цэс -->
+            <div class="menu-link-1">
+                <a href="../Informations/menu.html"><h3>Хоолны цэс</h3></a>
+            </div>
+
+            <!-- Row 2, Column 5: Уух зүйлс -->
+            <div class="menu-link-2">
+                <a href="../Drinks menu/drinks.html"><h3>Уух зүйлс</h3></a>
+            </div>
+
+            <!-- Row 2, Column 6: Эвентүүд -->
+            <div class="menu-link-3">
+                <a href="../Informations/events.html"><h3>Эвентүүд</h3></a>
+            </div>
+
+            <!-- Row 2, Column 7: Бэлгийн карт -->
+            <div class="menu-link-4">
+                <a href="../Informations/gift_card.html"><h3>Бэлгийн карт</h3></a>
+            </div>
+
+            <!-- Row 2, Columns 8-9: Button (colspan 2) -->
+            <div class="button-cell">
+                <a href="../Informations/book.html" class="book-button">
+                    Ширээ захиалах
+                </a>
+            </div>
+        </div>
     </header>
 
     <hr>
 
-    <!-- Hero Section -->
-    <table width="100%" cellspacing="0" cellpadding="0">
-      <tr>
-        <td>
-          <table width="100%" cellpadding="60">
-            <tr>
-              <td align="center">
-                
-                <font size="8" color="#92663e"><b>UP NORTH</b></font><br />
-                <font size="5" color="#c9b88a">Wood Fire & Grill Bar</font><br /><br />
-                <img src="../src/outview.jpg" alt="Up_north_outview" width="90%">
-                <br>
-                <br>
-                <table width="30%" cellspacing="0" cellpadding="0">
-                  <tr height="2"><td bgcolor="#92663e"></td></tr>
-                  <tr height="3"><td></td></tr>
-                  <tr height="2"><td bgcolor="#c9b88a"></td></tr>
-                  <tr height="3"><td></td></tr>
-                  <tr height="1"><td bgcolor="#666666"></td></tr>
-                </table>
-                <br />
-                <font size="3" color="#cccccc">
-                  Адирондакийн зүрхэнд модоор галлагдсан амт<br />
-                  болон хөдөө сэтгэлийн уулзвар
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+        <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-background">
+            <img src="../src/outside.jpg" alt="Up_north_outview">
+            <div class="hero-overlay">
+                <div class="hero-top">
+                    <div class="hero-title">UP NORTH</div>
+                    <div class="hero-subtitle">Wood Fire & Grill Bar</div>
+                    <div class="hero-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-line gold"></div>
+                    </div>
+                    <div class="hero-tagline">
+                        Адирондакийн зүрхэнд модоор галлагдсан амт<br />
+                        болон хөдөө сэтгэлийн уулзвар
+                    </div>
+                </div>
+            </div>
 
-    <br /><br /><br />
-
-    <!-- Welcome Section - Asymmetric -->
-    <table width="80%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="40%" valign="top">
-          <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="5%" bgcolor="#92663e"></td>
-              <td width="95%">
-                <table width="100%" cellpadding="30">
-                  <tr>
-                    <td>
-                      <font size="6" color="#92663e"><b>Тавтай морил</b></font>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td width="5%"></td>
-        <td width="55%" valign="top">
-          <table width="100%" cellpadding="25">
-            <tr>
-              <td>
-                <font size="3" color="#666666">
-                  Үзэсгэлэнт Игл Бэй хотод байрладаг Up North нь модоор галлагдсан пицца,
-                  шинэхэн салад, махлаг сэндвич болон онцгой хоолоор мартагдашгүй
-                  хооллолтын туршлагыг санал болгодог. Бидний тав тухтай орчин болон
-                  найрсаг үйлчилгээ нь гэр бүлийн оройн хоол, болзоо эсвэл найзуудтайгаа
-                  цуглахад төгс газар юм.
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <br /><br /><br />
+            <!-- Welcome Section - Appears on hover -->
+            <div class="welcome-section">
+                <div class="welcome-left">
+                    <div class="welcome-accent"></div>
+                    <div class="welcome-title">
+                        <h2>Тавтай морил</h2>
+                    </div>
+                </div>
+                <div></div>
+                <div class="welcome-content">
+                    <p>
+                        Үзэсгэлэнт Игл Бэй хотод байрладаг Up North нь модоор галлагдсан пицца,
+                        шинэхэн салад, махлаг сэндвич болон онцгой хоолоор мартагдашгүй
+                        хооллолтын туршлагыг санал болгодог. Бидний тав тухтай орчин болон
+                        найрсаг үйлчилгээ нь гэр бүлийн оройн хоол, болзоо эсвэл найзуудтайгаа
+                        цуглахад төгс газар юм.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Decorative Divider -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0">
-      <tr height="2"><td width="20%" bgcolor="#92663e"></td><td width="80%"></td></tr>
-      <tr height="2"><td width="40%" bgcolor="#c9b88a"></td><td width="60%"></td></tr>
-      <tr height="2"><td width="25%" bgcolor="#cccccc"></td><td width="75%"></td></tr>
-    </table>
-
-    <br /><br /><br />
+    <div class="decorative-divider">
+        <div class="divider-row brown"></div>
+        <div class="divider-row gold"></div>
+        <div class="divider-row light-gray"></div>
+    </div>
 
     <!-- Featured Sections - Staggered Layout -->
     
-    <!-- Food Menu - Right Heavy -->
-    <table width="80%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="30%"></td>
-        <td width="70%">
-          <a href="food_menu.html" style="text-decoration: none;">
-            <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#fafafa">
-              <tr>
-                <td>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="4"><td bgcolor="#c9b88a"></td></tr>
-                  </table>
-                  <table width="100%" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td width="65%" valign="middle">
-                        <table width="100%" cellpadding="30">
-                          <tr>
-                            <td>
-                              <font size="6" color="#333333"><b>Хоолны цэс</b></font><br />
-                              <font size="3" color="#666666">
-                                Хачир • Салад • Пицца • Сэндвич<br />
-                                Пуэрто Рикан • Хүүхдийн цэс • Онцлог хоол
-                              </font>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td width="35%" align="center" valign="middle">
-                        <br />
-                        <font size="7" color="#c9b88a">🍕</font>
-                        <br />
-                        <font size="2" color="#999999">Үзэх →</font>
-                        <br />
-                      </td>
-                    </tr>
-                  </table>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="4"><td bgcolor="#c9b88a"></td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </a>
-        </td>
-      </tr>
-    </table>
+    <!-- Food Menu Section -->
+    <div class="featured-section featured-right">
+        <div class="featured-box">
+            <div class="featured-badge">🍕</div>
+            <div class="featured-image-container">
+                <img src="../src/empanada.jpg" alt="Food 1">
+                <img src="../src/corn_beef.jpg" alt="Food 2">
+                <img src="../src/quesadilla.jpg" alt="Food 3">
+            </div>
+            <div class="featured-content-wrapper">
+                <div class="featured-content">
+                    <h3>Хоолны<br>цэс</h3>
+                    <p>
+                        Хачир • Салад • Пицца • Сэндвич<br />
+                        Пуэрто Рикан • Хүүхдийн цэс • Онцлог хоол
+                    </p>
+                    <a href="./menu.html"><div class="featured-view-btn">Үзэх</div></a>
+                </div>
+                <div class="corner-decoration"></div>
+            </div>
+        </div>
+    </div>
 
-    <br /><br /><br />
+    <!-- Drink Menu Section -->
+    <div class="featured-section featured-left">
+        <div class="featured-box drinks">
+            <div class="featured-badge">🍹</div>
+            <div class="featured-content-wrapper">
+                <div class="featured-content">
+                    <h3>Ундааны<br>цэс</h3>
+                    <p>
+                        Шар айраг • Дарс • Коктейл • Спирт<br />
+                        Ундаа • Онцгой уух зүйлс
+                    </p>
+                    <a href="../Drinks menu/drinks.html"><div class="featured-view-btn">Үзэх</div></a>
+                </div>
+                <div class="corner-decoration"></div>
+            </div>
+            <div class="featured-image-container">
+                <img src="../src/cocktail.jpg" alt="Drink 1">
+                <img src="../src/drink2.jpg" alt="Drink 2">
+                <img src="../src/drink3.jpg" alt="Drink 3">
+            </div>
+        </div>
+    </div>
 
-    <!-- Drink Menu - Left Heavy -->
-    <table width="80%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="70%">
-          <a href="drink_menu.html" style="text-decoration: none;">
-            <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#fafafa">
-              <tr>
-                <td>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="4"><td bgcolor="#9da171"></td></tr>
-                  </table>
-                  <table width="100%" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td width="35%" align="center" valign="middle">
-                        <br />
-                        <font size="7" color="#9da171">🍹</font>
-                        <br />
-                        <font size="2" color="#999999">Үзэх →</font>
-                        <br />
-                      </td>
-                      <td width="65%" valign="middle">
-                        <table width="100%" cellpadding="30">
-                          <tr>
-                            <td align="right">
-                              <font size="6" color="#333333"><b>Ундааны цэс</b></font><br />
-                              <font size="3" color="#666666">
-                                Шар айраг • Дарс • Коктейл • Спирт<br />
-                                Ундаа • Онцгой уух зүйлс
-                              </font>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="4"><td bgcolor="#9da171"></td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </a>
-        </td>
-        <td width="30%"></td>
-      </tr>
-    </table>
+    <!-- Gift Card Pill - Floating on Division -->
+    <div class="gift-card-pill">
+        <div class="gift-pill-content">
+            <!-- Gift Card Image - Bottom Center (Tilted) -->
+            <div class="gift-card-image">
+                <img src="../src/gift_card.jpg" alt="Gift Card">
+            </div>
 
-    <br /><br /><br />
+            <!-- Left Side - Title -->
+            <div class="gift-pill-left">
+                <h3>Бэлгийн<br>карт</h3>
+            </div>
 
-    <!-- Events - Centered Full -->
-    <table width="65%" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td>
-          <a href="events.html" style="text-decoration: none;">
-            <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#92663e">
-              <tr>
-                <td>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="3"><td bgcolor="#7a5232"></td></tr>
-                  </table>
-                  <table width="100%" cellpadding="35">
-                    <tr>
-                      <td align="center">
-                        <font size="6" color="white"><b>Эвент ба Зугаа цэнгэл</b></font><br />
-                        <font size="3" color="#e0e0e0">
-                          Аз жаргалын цаг • Tipsy Jenga • Загасны шарлага • Шууд хөгжим • Караоке
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                  <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr height="3"><td bgcolor="#7a5232"></td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </a>
-        </td>
-      </tr>
-    </table>
+            <!-- Right Side - Description and Button -->
+            <div class="gift-pill-right">
+                <p>
+                    Гайхалтай хоол болон ундааны бэлэг өгөх<br>
+                    Аливаа тохиолдолд төгс • Хүчинтэй хугацаагүй
+                </p>
+                <a href="gift_cards.html" class="gift-pill-button">Дэлгэрэнгүй</a>
+            </div>
+        </div>
+    </div>
 
-    <br /><br /><br /><br />
+    <!-- Info Grid Section - On Brown Background -->
+    <div class="info-grid-section">
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>Цагийн хуваарь</h4>
+                <p><strong>Өвлийн улирал</strong></p>
+                <p>Да-Пү: 4PM-9PM</p>
+                <p>Ба: 4PM-11PM</p>
+                <p>Бя-Ням: 8AM-11PM</p>
+                <br>
+                <a href="schedule.html">Бүрэн хуваарь үзэх →</a>
+            </div>
 
-    <!-- Info Grid - 3 Columns -->
-    <table width="80%" align="center" cellspacing="20" cellpadding="0">
-      <tr>
-        <!-- Hours -->
-        <td valign="top">
-          <table width="100%" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="25" bgcolor="white">
-            <tr>
-              <td align="center">
-                <font size="4" color="#92663e"><b>Цагийн хуваарь</b></font><br /><br />
-                <font size="2" color="#666666">
-                  <b>Өвлийн улирал</b><br />
-                  Да-Пү: 4PM-9PM<br />
-                  Ба: 4PM-11PM<br />
-                  Бя-Ням: 8AM-11PM<br /><br />
-                  <a href="schedule.html"><font color="#92663e">Бүрэн хуваарь үзэх →</font></a>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
+            <div class="info-card">
+                <h4>Байршил</h4>
+                <p>4907 State Route 28</p>
+                <p>Eagle Bay, NY 13331</p>
+                <br>
+                <p>Адирондакийн зүрхэнд<br>байрладаг</p>
+                <br>
+                <a href="about.html">Чиглэл авах →</a>
+            </div>
 
-        <!-- Location -->
-        <td valign="top">
-          <table width="100%" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="25" bgcolor="white">
-            <tr>
-              <td align="center">
-                <font size="4" color="#92663e"><b>Байршил</b></font><br /><br />
-                <font size="2" color="#666666">
-                  4907 State Route 28<br />
-                  Eagle Bay, NY 13331<br /><br />
-                  Адирондакийн зүрхэнд<br />
-                  байрладаг<br /><br />
-                  <a href="about.html"><font color="#92663e">Чиглэл авах →</font></a>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
+            <div class="info-card">
+                <h4>Холбоо барих</h4>
+                <p>Утас:</p>
+                <p class="highlight">(315) 357-3420</p>
+                <br>
+                <p>Захиалга,<br>үйлчилгээний асуулт,<br>эсвэл асуултын тухай</p>
+                <br>
+                <a href="contact.html">Холбоо барих →</a>
+            </div>
+        </div>
+    </div>
 
-        <!-- Contact -->
-        <td valign="top">
-          <table width="100%" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="25" bgcolor="white">
-            <tr>
-              <td align="center">
-                <font size="4" color="#92663e"><b>Холбоо барих</b></font><br /><br />
-                <font size="2" color="#666666">
-                  Утас:<br />
-                  <font size="3" color="#333333"><b>(315) 357-3420</b></font><br /><br />
-                  Захиалга,<br />
-                  үйлчилгээний асуулт,<br />
-                  эсвэл асуултын тухай<br /><br />
-                  <a href="contact.html"><font color="#92663e">Холбоо барих →</font></a>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+    <!-- Events Carousel Section - On White Background -->
+    <div class="events-section">
+        <div class="events-container">
+            <div class="events-header">
+                <h3>Эвент ба Зугаа цэнгэл</h3>
+                <p>Манай онцгой эвентүүд болон үйл ажиллагаануудыг судлаарай</p>
+            </div>
 
-    <br /><br /><br />
+            <div class="events-carousel">
+                <div class="carousel-wrapper">
+                    <!-- Event 1 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/happy_hour_4.jpg" alt="Happy Hour">
+                        </div>
+                        <div class="event-info">
+                            <h4>Аз жаргалын цаг</h4>
+                            <div class="event-divider"></div>
+                            <p>Долоо хоногийн бүх өдөр 4PM-6PM<br>Сонгосон ундаа болон хачирын хямдрал</p>
+                        </div>
+                    </div>
 
-    <!-- Gift Card CTA - Split Design -->
-    <table width="70%" align="center" cellspacing="0" cellpadding="0" bgcolor="#fafafa">
-      <tr>
-        <td width="40%" bgcolor="#92663e">
-          <table width="100%" cellpadding="30">
-            <tr>
-              <td align="center">
-                <font size="7" color="white"><b>🎁</b></font><br /><br />
-                <font size="2" color="#e0e0e0">Гайхалтай хоол<br />болон ундааны бэлэг өгөх</font>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td width="60%">
-          <table width="100%" cellpadding="30">
-            <tr>
-              <td align="center">
-                <font size="5" color="#333333"><b>Бэлгийн карт боломжтой</b></font><br /><br />
-                <font size="3" color="#666666">
-                  Аливаа тохиолдолд төгс • Хүчинтэй хугацаагүй<br />
-                  Дэлгүүр эсвэл утсаар авах боломжтой
-                </font><br /><br />
-                <a href="gift_cards.html"><font size="3" color="#92663e"><b>Дэлгэрэнгүй →</b></font></a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+                    <!-- Event 2 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/tipsy_jenga.jpg" alt="Tipsy Jenga">
+                        </div>
+                        <div class="event-info">
+                            <h4>Tipsy Jenga</h4>
+                            <div class="event-divider"></div>
+                            <p>Найзуудтайгаа хамт тоглож,<br>архи уугаад хөгжилдөөрэй</p>
+                        </div>
+                    </div>
 
-    <br /><br /><br />
+                    <!-- Event 3 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/fishfry2.jpg" alt="Fish Fry">
+                        </div>
+                        <div class="event-info">
+                            <h4>Загасны шарлага</h4>
+                            <div class="event-divider"></div>
+                            <p>Баасан бүр орой<br>Шинэхэн загас болон гоёмсог хачир</p>
+                        </div>
+                    </div>
 
-    <!-- Twisters Ice Cream Feature -->
-    <table width="60%" align="center" cellspacing="0" cellpadding="30" bgcolor="#f5f5f5">
-      <tr>
-        <td align="center">
-          <img src="../src/twisters_logo.jpeg" alt="Twisters" width="100" /><br /><br />
-          <font size="5" color="#333333"><b>Twisters Зайрмаг</b></font><br />
-          <font size="3" color="#666666">
-            Улиралчаар нээлттэй • 50+ амт бүхий дээд зэргийн зөөлөн зайрмаг<br />
-            <a href="twisters.html"><font color="#92663e">Зайрмагны цэс үзэх →</font></a>
-          </font>
-        </td>
-      </tr>
-    </table>
+                    <!-- Event 4 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/midnite2.jpg" alt="Live Music">
+                        </div>
+                        <div class="event-info">
+                            <h4>Шууд хөгжим</h4>
+                            <div class="event-divider"></div>
+                            <p>Сар бүрийн тодорхой баасан гариг<br>Орон нутгийн уран бүтээлчид</p>
+                        </div>
+                    </div>
 
-    <br /><br /><br />
+                    <!-- Event 5 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/karaoke_1.jpg" alt="Karaoke">
+                        </div>
+                        <div class="event-info">
+                            <h4>Караоке шөнө</h4>
+                            <div class="event-divider"></div>
+                            <p>Бямба гарагт<br>Дуулж, хөгжилдөөрэй!</p>
+                        </div>
+                    </div>
 
-    <!-- Final CTA Section -->
-    <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#333333">
-      <tr>
-        <td>
-          <table width="60%" align="center" cellpadding="50">
-            <tr>
-              <td align="center">
-                <font size="6" color="white"><b>Өнөөдөр зочлоорой</b></font><br /><br />
-                <font size="3" color="#cccccc">
-                  Up North Wood Fire & Grill Bar-ын дулаан уур амьсгалыг мэдрээрэй
-                </font><br /><br />
-                <a href="#reserve">
-                  <svg width="200" height="60">
-                    <rect width="200" height="60" fill="#92663e" rx="30" />
-                    <text
-                      x="100"
-                      y="38"
-                      fill="white"
-                      font-size="20"
-                      font-weight="bold"
-                      text-anchor="middle"
-                    >
-                      Захиалга хийх
-                    </text>
-                  </svg>
-                </a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+                    <!-- Event 6 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/trivia1.jpg" alt="Trivia Night">
+                        </div>
+                        <div class="event-info">
+                            <h4>Trivia шөнө</h4>
+                            <div class="event-divider"></div>
+                            <p>Сар бүрийн эхний пүрэв гариг<br>Багаараа оролцоорой</p>
+                        </div>
+                    </div>
 
-    <br /><br />
+                    <!-- Event 7 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../src/party.jpg" alt="Special Events">
+                        </div>
+                        <div class="event-info">
+                            <h4>Онцгой эвентүүд</h4>
+                            <div class="event-divider"></div>
+                            <p>Баяр ёслол болон<br>улирлын онцгой арга хэмжээнүүд</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Abstract Closing Element -->
-    <table width="70%" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="25%">
-          <table width="80%" cellspacing="0" cellpadding="0">
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#c9b88a"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#cccccc"></td></tr>
-          </table>
-        </td>
-        <td width="50%"></td>
-        <td width="25%" align="right">
-          <table width="80%" cellspacing="0" cellpadding="0">
-            <tr height="2"><td bgcolor="#cccccc"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="2"><td bgcolor="#c9b88a"></td></tr>
-            <tr height="3"><td></td></tr>
-            <tr height="3"><td bgcolor="#92663e"></td></tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+    
+    <!-- Twisters Section -->
+    <div class="twisters-section">
+        <img src="../src/twisters_logo.jpeg" alt="Twisters">
+        <h3>Twisters Зайрмаг</h3>
+        <p>
+            Улиралчаар нээлттэй • 50+ амт бүхий дээд зэргийн зөөлөн зайрмаг<br>
+            <a href="twisters.html">Зайрмагны цэс үзэх →</a>
+        </p>
+    </div>
 
-    <br /><br />
+    <!-- Final CTA -->
+    <div class="final-cta">
+        <div class="final-cta-content">
+            <h2>Өнөөдөр зочлоорой</h2>
+            <p>
+                Up North Wood Fire & Grill Bar-ын дулаан уур амьсгалыг мэдрээрэй
+            </p>
+            <a href="#reserve" class="cta-button">
+                Захиалга хийх
+            </a>
+        </div>
+    </div>
+
+    <!-- Closing Element -->
+    <div class="closing-element">
+        <div class="closing-left">
+            <div class="closing-line thick brown"></div>
+            <div class="closing-line medium gold"></div>
+            <div class="closing-line medium light-gray"></div>
+        </div>
+        <div></div>
+        <div class="closing-right">
+            <div class="closing-line medium light-gray"></div>
+            <div class="closing-line medium gold"></div>
+            <div class="closing-line thick brown"></div>
+        </div>
+    </div>
 
     <!-- The following table is the FOOTER -->
     <footer>
-      <hr />
-      <table width="100%" cellpadding="20" bgcolor="#92663e">
-        <tr>
-          <td width="33%" valign="top">
-            <font color="white">
-              <b>Up North Wood Fire & Grill Bar</b><br />
-              4907 State Route 28<br />
-              Eagle Bay, NY 13331<br />
-              Phone: (315) 357-3420
-            </font>
-          </td>
-          <td width="33%" align="center" valign="top">
-            <font color="white">
-              <b>Шуурхай холбоос</b><br />
-              <a href="menu.html"><font color="white">Цэс</font></a> |
-              <a href="about.html"><font color="white">Бидний тухай</font></a> |
-              <a href="contact.html"><font color="white">Холбоо барих</font></a
-              ><br />
-              <a href="twisters.html"
-                ><font color="white">Twisters Зайрмаг</font></a
-              >
-            </font>
-          </td>
-          <td width="33%" align="right" valign="top">
-            <font color="white">
-              <b>Биднийг дагах</b><br />
-              Facebook | Instagram<br />
-              Twitter | Yelp
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" align="center">
-            <font color="white">
-              <small>
-                &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх
-                хуулиар хамгаалагдсан.<br />
-                Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны
-                нэр]-ээр бүтээсэн
-              </small>
-            </font>
-          </td>
-        </tr>
-      </table>
+        <hr />
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-column footer-left">
+                    <b>Up North Wood Fire & Grill Bar</b>
+                    4907 State Route 28<br />
+                    Eagle Bay, NY 13331<br />
+                    Phone: (315) 357-3420
+                </div>
+                
+                <div class="footer-column footer-center">
+                    <b>Шуурхай холбоос</b>
+                    <div class="footer-links">
+                        <a href="../Informations/menu.html">Хоолны цэс</a> |
+                        <a href="../Drinks menu/drinks.html">Уух зүйлс</a> |
+                        <a href="../Informations/about_us.html">Бидний тухай</a><br />
+                        <a href="../Informations/events.html">Эвентүүд</a> |
+                        <a href="../Informations/gift_card.html">Бэлгийн карт</a> |
+                        <a href="../Twister/index.html">Twisters Зайрмаг</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column footer-right">
+                    <b>Биднийг дагах</b>
+                    Facebook | Instagram<br />
+                    Twitter | Yelp
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <small>
+                    &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар хамгаалагдсан.<br />
+                    Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
+                </small>
+            </div>
+        </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Complete Demo</title>
+    <link rel="stylesheet" href="how-it-works.css">
+</head>
+<link rel="stylesheet" href="how_it_works.css">
+<body>
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Side Content -->
+                <div class="left-content">
+                    <h2 class="section-title">How it works</h2>
+                    <p class="section-description">
+                        It's super simple - choose your card, pick a design, personalise your message and set the amount you'd like to gift.
+                    </p>
+                    <a href="#" class="cta-button">
+                        Buy a Gift Card
+                        <svg class="arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Illustration -->
+                    <div class="illustration">
+                        <img src="../src/gift_card_couple.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Right Side - Cards Carousel -->
+                <div class="right-content">
+                    <div class="cards-container">
+                        <div class="cards-wrapper">
+                            <!-- Card 01 -->
+                            <div class="step-card card-01 active">
+                                <span class="card-number">01</span>
+                                <h3 class="card-title">Select the card type</h3>
+                                <p class="card-description">
+                                    Choose between a physical gift card with a personalised greetings card or an e-gift card sent digitally.
+                                </p>
+                            </div>
+                            
+                            <!-- Card 02 -->
+                            <div class="step-card card-02">
+                                <span class="card-number">02</span>
+                                <h3 class="card-title">Choose your design</h3>
+                                <p class="card-description">
+                                    Choose from a selection of greetings cards and e-gift designs to personalise your gift.
+                                </p>
+                            </div>
+                            
+                            <!-- Card 03 -->
+                            <div class="step-card card-03">
+                                <span class="card-number">03</span>
+                                <h3 class="card-title">Choose the value</h3>
+                                <p class="card-description">
+                                    Select any amount between £5 and £250 and add to your basket.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Dots and Arrows -->
+                    <div class="carousel-controls">
+                        <div class="dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <div class="arrow-buttons">
+                            <button class="arrow-btn prev-btn" aria-label="Previous">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="arrow-btn next-btn" aria-label="Next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+        // How It Works Carousel Script
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardsWrapper = document.querySelector('.cards-wrapper');
+            const cards = document.querySelectorAll('.step-card');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            let currentSlide = 0;
+            const totalSlides = cards.length;
+            
+            // Function to update carousel position
+            function updateCarousel() {
+                const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+                cardsWrapper.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Update cards active state
+                cards.forEach((card, index) => {
+                    card.classList.toggle('active', index === currentSlide);
+                });
+            }
+            
+            // Next button
+            nextBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            });
+            
+            // Previous button
+            prevBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', updateCarousel);
+            
+            // Initialize
+            updateCarousel();
+        });
+    </script> -->
+</body>
+</html>

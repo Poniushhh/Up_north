@@ -1,0 +1,691 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #fdfaf6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* --- Title Section --- */
+.title-section {
+  text-align: center;
+  margin: 50px auto 20px;
+}
+.title-section h1 {
+  color: #92663e;
+  font-size: 2.5rem;
+  margin-bottom: 0.3em;
+}
+.subtitle {
+  display: block;
+  font-size: 1.4rem;
+  color: #999;
+  letter-spacing: 3px;
+}
+.divider {
+  width: 60%;
+  height: 3px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #92663e, #e0d3c4);
+  border-radius: 2px;
+}
+
+/* --- Hero Message --- */
+.hero-message {
+  text-align: center;
+  margin: 20px auto;
+  opacity: 0;
+  animation: appear 2s ease forwards;
+}
+.hero-message p {
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* --- Decorative Line --- */
+.center-line {
+  width: 30%;
+  height: 1px;
+  margin: 0 auto 50px;
+  background: linear-gradient(90deg, transparent, #92663e, transparent);
+  animation: shimmer 5s infinite linear;
+}
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, #e8f4f8 0%, #ffffff 50%, #e8f4f8 100%);
+    overflow: hidden;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* Carousel Track */
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: slideLeft 50s linear infinite;
+}
+
+/* Carousel Items */
+.carousel-item {
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+
+/* Sliding Animation */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Half Oval Masks */
+.oval-mask {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.7));
+    z-index: 10;
+    pointer-events: none;
+}
+
+.oval-mask-top {
+    top: 0;
+    background: #fdfaf6;
+    clip-path: ellipse(50% 100% at 50% 0%);
+}
+
+.oval-mask-bottom {
+    bottom: 0;
+    background: #fdfaf6;
+    clip-path: ellipse(50% 100% at 50% 100%);
+}
+
+/* Gift Card Container */
+.giftcard-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    perspective: 1500px;
+}
+
+/* Gift Card with 3D Effect */
+.giftcard {
+    position: relative;
+    width: 550px;
+    height: 290px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: rotateY(-20deg) rotateX(15deg) rotateZ(10deg) translateY(-50px) translateX(-40px);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    animation: breathingScale 4s ease-in-out infinite;
+}
+
+/* Breathing Scale Animation */
+@keyframes breathingScale {
+    0%, 100% {
+        transform: rotateY(-20deg) rotateX(15deg) rotateZ(10deg) translateY(-50px) translateX(-40px) scale(1);
+    }
+    50% {
+        transform: rotateY(-20deg) rotateX(15deg) rotateZ(10deg) translateY(-50px) translateX(-40px) scale(1.05);
+    }
+}
+
+/* Gift Card Content */
+.giftcard-content {
+    position: relative;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.giftcard-content img{
+  border-radius: 10px;
+}
+
+.giftcard-url {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+}
+
+/* 3D Depth Effect on Gift Card Edge */
+.giftcard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+    border-radius: 0 20px 20px 0;
+    transform: translateZ(-10px);
+}
+
+.giftcard::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
+    border-radius: 0 0 20px 20px;
+    transform: translateZ(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-section {
+        height: 400px;
+    }
+    
+    .carousel-item {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .giftcard {
+        width: 350px;
+        height: 220px;
+        transform: rotateY(-10deg) rotateX(3deg) translateZ(30px);
+        animation: breathingScaleMobile 4s ease-in-out infinite;
+    }
+    
+    @keyframes breathingScaleMobile {
+        0%, 100% {
+            transform: rotateY(-10deg) rotateX(3deg) translateZ(30px) scale(1);
+        }
+        50% {
+            transform: rotateY(-10deg) rotateX(3deg) translateZ(30px) scale(1.05);
+        }
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .giftcard {
+        width: 280px;
+        height: 180px;
+    }
+    
+}
+
+/* --- Denominations --- */
+.denominations {
+  margin-top: 120px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.denominations h2 {
+  font-size: 2rem;
+  color: #333;
+}
+.denom-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 40px;
+}
+.denom-item {
+  background: #f9f6f2;
+  border: 1px solid #e2d4c4;
+  border-radius: 8px;
+  width: 250px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+.denom-item:hover {
+  background: #fffaf3;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.amount {
+  font-size: 1.8rem;
+  color: #92663e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 80px 20px;
+    min-height: 80vh;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left Content */
+.left-content {
+    padding-right: 0px;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #2d2d3a;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: #4a4a5e;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2d2d3a;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(45, 45, 58, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #92663e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(146, 102, 62, 0.3);
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+/* Illustration */
+.illustration {
+    margin-top: 20px;
+    max-width:550px;
+}
+
+.illustration img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Right Content - Cards */
+.right-content {
+    position: relative;
+}
+
+.cards-container {
+    overflow: scroll;
+    border-radius: 20px;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Step Cards */
+.step-card {
+    max-width: 400px;
+    min-width: 320px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    flex-shrink: 0;
+}
+
+.card-number {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Card Color Variations using user's palette */
+.card-01 {
+    background-color: #92663e;
+    color: white;
+}
+
+.card-01 .card-number {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-02 {
+    background-color: #d4c9e3;
+    color: #2d2d3a;
+}
+
+.card-02 .card-number {
+    color: #9da171;
+}
+
+.card-03 {
+    background-color: #c8d4c7;
+    color: #2d2d3a;
+}
+
+.card-03 .card-number {
+    color: #92663e;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d1d1d6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    width: 32px;
+    border-radius: 6px;
+    background-color: #2d2d3a;
+}
+
+.dot:hover {
+    background-color: #9da171;
+}
+
+/* Arrow Buttons */
+.arrow-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e6e4e1;
+    color: #2d2d3a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #9da171;
+    color: white;
+    transform: scale(1.05);
+}
+
+.arrow-btn.prev-btn:hover {
+    background-color: #d1cac3;
+}
+
+.arrow-btn.next-btn {
+    background-color: #2d2d3a;
+    color: white;
+}
+
+.arrow-btn.next-btn:hover {
+    background-color: #92663e;
+}
+
+.arrow-btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .left-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .illustration {
+        margin: 40px auto 0;
+    }
+    
+    .cta-button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 60px 20px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .step-card {
+        min-width: 280px;
+        padding: 40px 30px;
+    }
+    
+    .card-number {
+        font-size: 3rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-controls {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .step-card {
+        min-width: 260px;
+        padding: 30px 25px;
+    }
+    
+    .card-number {
+        font-size: 2.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .card-description {
+        font-size: 0.95rem;
+    }
+    
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Animation for card entrance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card-01 {
+    animation-delay: 0.1s;
+}
+
+.card-02 {
+    animation-delay: 0.2s;
+}
+
+.card-03 {
+    animation-delay: 0.3s;
+}
+
+/* --- Benefits --- */
+.benefits {
+  width: 60%;
+  margin: 40px auto;
+  margin-top: 120px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  opacity: 0;
+  animation: appear 1s ease 0.7s forwards;
+}
+.benefit-left h2 {
+  color: #92663e;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+.benefit-right ul {
+  font-size: 1.4rem;
+  list-style: none;
+  padding: 0;
+}
+.benefit-right li {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* --- CTA --- */
+.cta {
+  text-align: center;
+  background: #92663e;
+  color: white;
+  padding: 60px 20px;
+  opacity: 0;
+  animation: appear 2s ease 2s forwards;
+}
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* --- Animations --- */
+@keyframes shimmer {
+  0% {background-position: -200px;}
+  100% {background-position: 200px;}
+}
+@keyframes appear {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

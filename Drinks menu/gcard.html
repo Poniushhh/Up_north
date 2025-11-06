@@ -1,87 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events - Up North Wood Fire & Grill Bar</title>
-  </head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="events.css">
-  <body>
-    <!-- The following table is the HEADER -->
-    <header>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эвентүүд - Up North Wood Fire & Grill Bar</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
         <div class="header-container">
-            <!-- Row 1, Column 1: Logo (rowspan 2) -->
-            <div class="logo-cell">
-                <a href="../Informations/index.html">
-                    <img src="../src/logo.jpg" alt="Restaurant logo" width="100" />
+            <div class="header-top">
+                <a href="../Informations/index.html" class="logo-link">
+                    <img src="../src/logo.jpg" alt="Restaurant logo" class="logo">
                 </a>
+                <nav class="top-nav">
+                    <a href="../Informations/about_us.html">Бидний тухай</a>
+                    <a href="../Informations/schedule.html">Хуваарь</a>
+                </nav>
             </div>
-
-            <!-- Row 1, Columns 2-7: Empty (colspan 6) -->
-            <div class="empty-colspan"></div>
-
-            <!-- Row 1, Column 8: Бидний тухай -->
-            <div class="top-link-1">
-                <a href="../Informations/about_us.html">Бидний тухай</a>
-            </div>
-
-            <!-- Row 1, Column 9: Хуваарь -->
-            <div class="top-link-2">
-                <a href="../Informations/schedule.html">Хуваарь</a>
-            </div>
-
-            <!-- Row 2, Column 2: Twister Logo -->
-            <div class="twister-cell">
-                <a href="../Twister/index.html">
-                    <img src="../src/twisters_logo.jpeg" alt="Twisters logo" width="80"/>
+            
+            <div class="header-bottom">
+                <a href="../Twister/index.html" class="twister-logo">
+                    <img src="../src/twisters_logo.jpeg" alt="Twisters logo">
                 </a>
-            </div>
-
-            <!-- Row 2, Column 3: Empty 30% -->
-            <div class="empty-spacer"></div>
-
-            <!-- Row 2, Column 4: Хоолны цэс -->
-            <div class="menu-link-1">
-                <a href="../Informations/menu.html"><h3>Хоолны цэс</h3></a>
-            </div>
-
-            <!-- Row 2, Column 5: Уух зүйлс -->
-            <div class="menu-link-2">
-                <a href="../Drinks menu/drinks.html"><h3>Уух зүйлс</h3></a>
-            </div>
-
-            <!-- Row 2, Column 6: Эвентүүд -->
-            <div class="menu-link-3">
-                <a href="../Informations/events.html"><h3>Эвентүүд</h3></a>
-            </div>
-
-            <!-- Row 2, Column 7: Бэлгийн карт -->
-            <div class="menu-link-4">
-                <a href="../Informations/gift_card.html"><h3>Бэлгийн карт</h3></a>
-            </div>
-
-            <!-- Row 2, Columns 8-9: Button (colspan 2) -->
-            <div class="button-cell">
-                <a href="../Informations/book.html" class="book-button">
-                    Ширээ захиалах
+                
+                <nav class="main-nav">
+                    <a href="../Informations/menu.html">Хоолны цэс</a>
+                    <a href="../Drinks menu/drinks.html">Уух зүйлс</a>
+                    <a href="../Informations/events.html" class="active">Эвентүүд</a>
+                    <a href="../Informations/gift_card.html">Бэлгийн карт</a>
+                </nav>
+                
+                <a href="../Informations/book.html" class="booking-btn">
+                    Захиалга хийх
                 </a>
             </div>
         </div>
     </header>
 
-    <hr>
-
-    <div class="breadcrumb-navigation">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
         <a href="index.html">Нүүр</a>
-        <font color="#999999"> &gt; </font>
-        <font color="#92663e"><a class="current" href="./events.html"><b>Эвентүүд</b></a>
-      </div>
+        <span class="separator">&gt;</span>
+        <span class="current">Эвентүүд</span>
+    </nav>
 
-    <!-- MAIN CONTENT -->
     <main class="events-page">
         <section class="page-title">
-            <h1>Эвентүүд</h1>
+            <h1>Үйл явдлууд</h1>
             <p class="subtitle">Манай рестораны онцлох эвентүүд</p>
         </section>
 
@@ -92,10 +59,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                            <img src="../src/happy_hour_1.avif" alt="Happy Hour Photo 1">
-                            <img src="../src/happy_hour_2.jpg" alt="Happy Hour Photo 2">
-                            <img src="../src/happy_hour_3.jpeg" alt="Happy Hour Photo 3">
-                            <img src="../src/happy_hour_4.jpg" alt="Happy Hour Photo 3">
+                            <img src="images/happyhour1.jpg" alt="Happy Hour Photo 1">
+                            <img src="images/happyhour2.jpg" alt="Happy Hour Photo 2">
+                            <img src="images/happyhour3.jpg" alt="Happy Hour Photo 3">
                         </div>
                     </div>
                 </div>
@@ -123,10 +89,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                          <img src="../src/tipsy_jenga.jpg" alt="Tipsy Jenga Photo 4">
-                            <img src="../src/tipsy_jenga_1.jpg" alt="Tipsy Jenga Photo 1">
-                            <img src="../src/tipsy_jenga_2.jpg" alt="Tipsy Jenga Photo 2">
-                            <img src="../src/tipsy_jenga_3.jpg" alt="Tipsy Jenga Photo 3">
+                            <img src="images/jenga1.jpg" alt="Tipsy Jenga Photo 1">
+                            <img src="images/jenga2.jpg" alt="Tipsy Jenga Photo 2">
+                            <img src="images/jenga3.jpg" alt="Tipsy Jenga Photo 3">
                         </div>
                     </div>
                 </div>
@@ -144,9 +109,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                            <img src="../src/fishfry1.jpeg" alt="Fish Fry Photo 1">
-                            <img src="../src/fishfry2.webp" alt="Fish Fry Photo 2">
-                            <img src="../src/fishfry3.jpg" alt="Fish Fry Photo 3">
+                            <img src="images/fishfry1.jpg" alt="Fish Fry Photo 1">
+                            <img src="images/fishfry2.jpg" alt="Fish Fry Photo 2">
+                            <img src="images/fishfry3.jpg" alt="Fish Fry Photo 3">
                         </div>
                     </div>
                 </div>
@@ -173,9 +138,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                            <img src="../src/midnite1.jpg" alt="Midnite Mike Photo 1">
-                            <img src="../src/midnite2.jpg" alt="Midnite Mike Photo 2">
-                            <img src="../src/midnite3.jpg" alt="Midnite Mike Photo 3">
+                            <img src="images/midnite1.jpg" alt="Midnite Mike Photo 1">
+                            <img src="images/midnite2.jpg" alt="Midnite Mike Photo 2">
+                            <img src="images/midnite3.jpg" alt="Midnite Mike Photo 3">
                         </div>
                     </div>
                 </div>
@@ -193,10 +158,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                          <img src="../src/karaoke.jpg" alt="Karaoke Night Photo 4  ">  
-                          <img src="../src/karaoke_1.jpg" alt="Karaoke Night Photo 1">
-                            <img src="../src/karaoke_2.jpeg" alt="Karaoke Night Photo 2">
-                            <img src="../src/karaoke3.jpg" alt="Karaoke Night Photo 3">
+                            <img src="images/karaoke1.jpg" alt="Karaoke Night Photo 1">
+                            <img src="images/karaoke2.jpg" alt="Karaoke Night Photo 2">
+                            <img src="images/karaoke3.jpg" alt="Karaoke Night Photo 3">
                         </div>
                     </div>
                 </div>
@@ -223,9 +187,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                            <img src="../src/party1.jpg" alt="Celebration Party Photo 1">
-                            <img src="../src/party2.jpg" alt="Celebration Party Photo 2">
-                            <img src="../src/party3.jpg" alt="Celebration Party Photo 3">
+                            <img src="images/party1.jpg" alt="Celebration Party Photo 1">
+                            <img src="images/party2.jpg" alt="Celebration Party Photo 2">
+                            <img src="images/party3.jpg" alt="Celebration Party Photo 3">
                         </div>
                     </div>
                 </div>
@@ -236,9 +200,9 @@
                 <div class="event-gallery">
                     <div class="gallery-container">
                         <div class="gallery-track">
-                            <img src="../src/trivia1.jpg" alt="Trivia Night Photo 1">
-                            <img src="../src/trivia2.jpg" alt="Trivia Night Photo 2">
-                            <img src="../src/trivia3.jpg" alt="Trivia Night Photo 3">
+                            <img src="images/trivia1.jpg" alt="Trivia Night Photo 1">
+                            <img src="images/trivia2.jpg" alt="Trivia Night Photo 2">
+                            <img src="images/trivia3.jpg" alt="Trivia Night Photo 3">
                         </div>
                     </div>
                 </div>
@@ -252,44 +216,41 @@
             </article>
         </div>
     </main>
-    <!-- The following table is the FOOTER -->
-    <footer>
-        <hr />
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-column footer-left">
-                    <b>Up North Wood Fire & Grill Bar</b>
-                    4907 State Route 28<br />
-                    Eagle Bay, NY 13331<br />
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Up North Wood Fire & Grill Bar</h4>
+                <p>
+                    4907 State Route 28<br>
+                    Eagle Bay, NY 13331<br>
                     Phone: (315) 357-3420
-                </div>
-                
-                <div class="footer-column footer-center">
-                    <b>Шуурхай холбоос</b>
-                    <div class="footer-links">
-                        <a href="../Informations/menu.html">Хоолны цэс</a> |
-                        <a href="../Drinks menu/drinks.html">Уух зүйлс</a> |
-                        <a href="../Informations/about_us.html">Бидний тухай</a><br />
-                        <a href="../Informations/events.html">Эвентүүд</a> |
-                        <a href="../Informations/gift_card.html">Бэлгийн карт</a> |
-                        <a href="../Twister/index.html">Twisters Зайрмаг</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column footer-right">
-                    <b>Биднийг дагах</b>
-                    Facebook | Instagram<br />
-                    Twitter | Yelp
-                </div>
+                </p>
             </div>
-            
-            <div class="footer-bottom">
-                <small>
-                    &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар хамгаалагдсан.<br />
-                    Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
-                </small>
+            <div class="footer-column">
+                <h4>Шуурхай холбоос</h4>
+                <nav class="footer-nav">
+                    <a href="menu.html">Цэс</a>
+                    <a href="about_us.html">Бидний тухай</a>
+                    <a href="contact.html">Холбоо барих</a>
+                    <a href="../Twister/index.html">Twisters Зайрмаг</a>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <h4>Биднийг дагах</h4>
+                <p>
+                    Facebook | Instagram<br>
+                    Twitter | Yelp
+                </p>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024 Up North Wood Fire & Grill Bar. Бүх эрх хуулиар хамгаалагдсан.<br>
+                Боловсролын зорилгоор бүтээсэн вэбсайт | [Оюутны нэр]-ээр бүтээсэн
+            </p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
